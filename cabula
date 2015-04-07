@@ -1,0 +1,117 @@
+rails generate scaffold UnidadeMedida unidade:string
+
+rails generate scaffold ingrediente unidade_medida_id:integer descricao:string
+
+rake db:migrate
+
+sqlite3 -line db/development.sqlite3
+
+Correr testes
+
+rake db:test:clone - sicronizar bases de dados
+bundle exec cucumber
+
+Aplicação corre em:
+https://pd4mealplanner-joaogoncalvespd4.c9.io/
+
+
+Criar Aplicação: rails news NOMEDAAPLICACAO
+Ligar Servidor: rail s 
+
+Directorio: c:\Sites
+
+Servidor: rails s
+
+http://localhost:3000/
+
+
+Aptana:
+
+correr 
+
+rails s 
+ctrl+c - parar 
+ver http://localhost:3000/ 
+
+Criar Projecto  - No Aptana: New Project
+
+Gerir Tabelas 
+
+Criar Tabela 
+Exemplo: rails generate scaffold Product title:string description:text image_url:string price:decimal
+Apagar: rails destroy scaffold products
+
+gera um ficheiro no directorio db
+
+Actualizar Tabela (ou qualquer coisa na base de dados)
+rake db:migrate
+
+Acrescentar um campo : rails generate migration AddReceitumIdToReceitaIngredientes  receitum_id:integer –force
+
+Criar uma tabela de ligação: Rails generate scaffold IngredientsRecipes recipe:references ingredient:references
+
+
+Abrir o SQL 
+
+sqlite3 -line db/development.sqlite3
+lista tabelas: .tables
+Sair: .quit
+Esquemas: .schema
+
+Gems
+
+gem install 
+
+bundle install
+
+As stylesheet tem de estar no directorio app\assets\stylesheet
+
+Exemplo de ligar tabelas
+rails generate scaffold line_item product_id:integer cart_id:integer
+
+
+
+
+HEROKU
+
+vast-fortress-3222.herokuapp.com/movies
+
+Cucumber
+
+bundle exec rake cucumber
+bundle exec cucumber features/CriaManterReceitas.feature (1 só feature, acrescentar :x – número da linha a correr)
+
+Git
+
+git init = inicializar
+git status
+git add * (-f) = adicionar ficheiros - quando se cria novos
+git commit -m "nome"
+git log (sair: q)
+
+debugger
+
+   gem debugger
+   acrestar uma linha de codigo debugger
+next (or step) to move forward to the next line
+cont to leave the debugger and let the program continue
+quit to leave the debugger and shut down Rails
+
+	
+irb
+irb –noreadline
+
+routes
+
+rake routes
+
+Debugging
+
+Escrever no log os parametros
+
+    params.each do |key,value|
+      Rails.logger.warn "JG " + "Param #{key}: #{value}"
+    end
+
+
+

@@ -1,0 +1,2092 @@
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/ingredientes" for 127.0.0.1 at 2014-09-17 14:07:10 +0000
+Processing by IngredientesController#index as HTML
+  [1m[35mIngrediente Load (0.6ms)[0m  SELECT "ingredientes".* FROM "ingredientes"
+SQLite3::SQLException: no such table: ingredientes: SELECT "ingredientes".* FROM "ingredientes"
+  Rendered ingredientes/index.html.erb within layouts/application (28.8ms)
+Completed 500 Internal Server Error in 62ms
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/ingredientes" for 127.0.0.1 at 2014-09-17 14:10:34 +0000
+Processing by IngredientesController#index as HTML
+  [1m[35mIngrediente Load (0.4ms)[0m  SELECT "ingredientes".* FROM "ingredientes"
+SQLite3::SQLException: no such table: ingredientes: SELECT "ingredientes".* FROM "ingredientes"
+  Rendered ingredientes/index.html.erb within layouts/application (7.1ms)
+Completed 500 Internal Server Error in 44ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/ingredientes" for 127.0.0.1 at 2014-09-17 16:20:10 +0000
+Processing by IngredientesController#index as HTML
+  [1m[35mIngrediente Load (2.0ms)[0m  SELECT "ingredientes".* FROM "ingredientes"
+  Rendered ingredientes/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 1032ms (Views: 808.1ms | ActiveRecord: 2.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/ingredientes" for 127.0.0.1 at 2014-09-17 16:29:10 +0000
+Processing by IngredientesController#index as HTML
+  [1m[35mIngrediente Load (1.9ms)[0m  SELECT "ingredientes".* FROM "ingredientes"
+  Rendered ingredientes/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 49ms (Views: 30.3ms | ActiveRecord: 1.9ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/ingredientes" for 127.0.0.1 at 2014-09-17 16:32:22 +0000
+Processing by IngredientesController#index as HTML
+  [1m[35mIngrediente Load (2.2ms)[0m  SELECT "ingredientes".* FROM "ingredientes"
+  Rendered ingredientes/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 64ms (Views: 43.7ms | ActiveRecord: 2.2ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/ingredientes" for 127.0.0.1 at 2014-09-17 16:33:06 +0000
+Processing by IngredientesController#index as HTML
+  [1m[35mIngrediente Load (3.7ms)[0m  SELECT "ingredientes".* FROM "ingredientes"
+  Rendered ingredientes/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 89ms (Views: 58.3ms | ActiveRecord: 3.7ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/ingredientes" for 127.0.0.1 at 2014-09-17 16:38:39 +0000
+Processing by IngredientesController#index as HTML
+  [1m[35mIngrediente Load (2.2ms)[0m  SELECT "ingredientes".* FROM "ingredientes"
+  Rendered ingredientes/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 49ms (Views: 30.2ms | ActiveRecord: 2.2ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/ingredientes" for 127.0.0.1 at 2014-09-17 16:43:25 +0000
+Processing by IngredientesController#index as HTML
+  [1m[35mIngrediente Load (1.8ms)[0m  SELECT "ingredientes".* FROM "ingredientes"
+  Rendered ingredientes/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 43ms (Views: 25.9ms | ActiveRecord: 1.8ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/ingredientes" for 127.0.0.1 at 2014-09-18 17:03:01 +0000
+Processing by IngredientesController#index as HTML
+  [1m[35mIngrediente Load (2.1ms)[0m  SELECT "ingredientes".* FROM "ingredientes"
+  Rendered ingredientes/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 726ms (Views: 588.2ms | ActiveRecord: 2.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/unidade_medidas" for 127.0.0.1 at 2014-09-18 17:05:24 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[35mUnidadeMedida Load (2.3ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas"
+  Rendered unidade_medidas/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 56ms (Views: 38.1ms | ActiveRecord: 2.3ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2014-09-18 17:05:24 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (192.8ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (252.3ms)
+Completed 200 OK in 257ms (Views: 255.5ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/unidade_medidas" for 127.0.0.1 at 2014-09-18 17:11:04 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[35mUnidadeMedida Load (2.1ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas"
+  Rendered unidade_medidas/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 45ms (Views: 27.7ms | ActiveRecord: 2.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/unidade_medidas" for 127.0.0.1 at 2014-09-18 17:12:07 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[35mUnidadeMedida Load (2.0ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas"
+  Rendered unidade_medidas/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 246ms (Views: 28.5ms | ActiveRecord: 2.0ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2014-09-18 17:12:07 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (18.5ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/unidade_medidas" for 127.0.0.1 at 2014-09-18 17:13:56 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[35mUnidadeMedida Load (2.0ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas"
+  Rendered unidade_medidas/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 43ms (Views: 26.3ms | ActiveRecord: 2.0ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2014-09-18 17:13:56 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (18.0ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (22.5ms)
+Completed 200 OK in 26ms (Views: 24.9ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/unidade_medidas" for 127.0.0.1 at 2014-09-18 17:15:03 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[35mUnidadeMedida Load (2.0ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas"
+  Rendered unidade_medidas/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 46ms (Views: 29.4ms | ActiveRecord: 2.0ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2014-09-18 17:15:03 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (18.9ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 28ms (Views: 26.2ms | ActiveRecord: 0.4ms)
+Started POST "/unidade_medidas" for 127.0.0.1 at 2014-09-18 17:15:03 +0000
+Processing by UnidadeMedidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "unidade_medida"=>{"unidade"=>"teste"}, "commit"=>"Create Unidade medida"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (5.9ms)[0m  INSERT INTO "unidade_medidas" ("created_at", "unidade", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 18 Sep 2014 17:15:03 UTC +00:00], ["unidade", "teste"], ["updated_at", Thu, 18 Sep 2014 17:15:03 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/unidade_medidas/1
+Completed 302 Found in 10ms (ActiveRecord: 6.1ms)
+Started GET "/unidade_medidas/1" for 127.0.0.1 at 2014-09-18 17:15:03 +0000
+Processing by UnidadeMedidasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUnidadeMedida Load (0.2ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas" WHERE "unidade_medidas"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered unidade_medidas/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 6ms (Views: 2.8ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/unidade_medidas" for 127.0.0.1 at 2014-09-26 18:21:30 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[35mUnidadeMedida Load (2.2ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas"
+  Rendered unidade_medidas/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 235ms (Views: 218.1ms | ActiveRecord: 2.2ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2014-09-26 18:21:30 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (131.0ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (193.4ms)
+Completed 200 OK in 201ms (Views: 199.9ms | ActiveRecord: 0.3ms)
+Started POST "/unidade_medidas" for 127.0.0.1 at 2014-09-26 18:21:31 +0000
+Processing by UnidadeMedidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "unidade_medida"=>{"unidade"=>"teste"}, "commit"=>"Create Unidade medida"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (36.6ms)[0m  INSERT INTO "unidade_medidas" ("created_at", "unidade", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 26 Sep 2014 18:21:31 UTC +00:00], ["unidade", "teste"], ["updated_at", Fri, 26 Sep 2014 18:21:31 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/unidade_medidas/1
+Completed 302 Found in 41ms (ActiveRecord: 36.7ms)
+Started GET "/unidade_medidas/1" for 127.0.0.1 at 2014-09-26 18:21:31 +0000
+Processing by UnidadeMedidasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUnidadeMedida Load (0.1ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas" WHERE "unidade_medidas"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered unidade_medidas/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 17ms (Views: 14.6ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/unidade_medidas" for 127.0.0.1 at 2014-09-26 18:22:03 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[35mUnidadeMedida Load (1.9ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas"
+  Rendered unidade_medidas/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 61ms (Views: 40.2ms | ActiveRecord: 1.9ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2014-09-26 18:22:03 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (22.4ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (27.3ms)
+Completed 200 OK in 31ms (Views: 29.6ms | ActiveRecord: 0.4ms)
+Started POST "/unidade_medidas" for 127.0.0.1 at 2014-09-26 18:22:03 +0000
+Processing by UnidadeMedidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "unidade_medida"=>{"unidade"=>"teste"}, "commit"=>"Create Unidade medida"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (6.2ms)[0m  INSERT INTO "unidade_medidas" ("created_at", "unidade", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 26 Sep 2014 18:22:03 UTC +00:00], ["unidade", "teste"], ["updated_at", Fri, 26 Sep 2014 18:22:03 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/unidade_medidas/1
+Completed 302 Found in 11ms (ActiveRecord: 6.3ms)
+Started GET "/unidade_medidas/1" for 127.0.0.1 at 2014-09-26 18:22:03 +0000
+Processing by UnidadeMedidasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUnidadeMedida Load (0.1ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas" WHERE "unidade_medidas"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered unidade_medidas/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 6ms (Views: 3.0ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36m (2.7ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/unidade_medidas" for 127.0.0.1 at 2014-12-31 14:32:51 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[35mUnidadeMedida Load (3.5ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas"
+  Rendered unidade_medidas/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 125ms (Views: 94.5ms | ActiveRecord: 3.5ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2014-12-31 14:32:51 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (35.5ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (56.0ms)
+Completed 200 OK in 62ms (Views: 60.3ms | ActiveRecord: 0.5ms)
+Started POST "/unidade_medidas" for 127.0.0.1 at 2014-12-31 14:32:51 +0000
+Processing by UnidadeMedidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "unidade_medida"=>{"unidade"=>"teste"}, "commit"=>"Create Unidade medida"}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (17.2ms)[0m  INSERT INTO "unidade_medidas" ("created_at", "unidade", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 31 Dec 2014 14:32:51 UTC +00:00], ["unidade", "teste"], ["updated_at", Wed, 31 Dec 2014 14:32:51 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/unidade_medidas/1
+Completed 302 Found in 24ms (ActiveRecord: 17.5ms)
+Started GET "/unidade_medidas/1" for 127.0.0.1 at 2014-12-31 14:32:51 +0000
+Processing by UnidadeMedidasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUnidadeMedida Load (0.2ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas" WHERE "unidade_medidas"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered unidade_medidas/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 9ms (Views: 5.7ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/unidade_medidas" for 127.0.0.1 at 2014-12-31 14:32:51 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[36mUnidadeMedida Load (0.2ms)[0m  [1mSELECT "unidade_medidas".* FROM "unidade_medidas"[0m
+  Rendered unidade_medidas/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2014-12-31 14:32:51 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (2.3ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (3.8ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/unidade_medidas" for 127.0.0.1 at 2014-12-31 14:38:18 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[35mUnidadeMedida Load (2.9ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas"
+  Rendered unidade_medidas/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 112ms (Views: 76.9ms | ActiveRecord: 2.9ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2014-12-31 14:38:18 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (29.9ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (43.8ms)
+Completed 200 OK in 53ms (Views: 50.7ms | ActiveRecord: 0.5ms)
+Started POST "/unidade_medidas" for 127.0.0.1 at 2014-12-31 14:38:18 +0000
+Processing by UnidadeMedidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "unidade_medida"=>{"unidade"=>"teste"}, "commit"=>"Create Unidade medida"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (15.3ms)[0m  INSERT INTO "unidade_medidas" ("created_at", "unidade", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 31 Dec 2014 14:38:18 UTC +00:00], ["unidade", "teste"], ["updated_at", Wed, 31 Dec 2014 14:38:18 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/unidade_medidas/1
+Completed 302 Found in 21ms (ActiveRecord: 15.5ms)
+Started GET "/unidade_medidas/1" for 127.0.0.1 at 2014-12-31 14:38:18 +0000
+Processing by UnidadeMedidasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUnidadeMedida Load (0.2ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas" WHERE "unidade_medidas"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered unidade_medidas/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 8ms (Views: 5.2ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/unidade_medidas" for 127.0.0.1 at 2014-12-31 14:38:18 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[36mUnidadeMedida Load (0.2ms)[0m  [1mSELECT "unidade_medidas".* FROM "unidade_medidas"[0m
+  Rendered unidade_medidas/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2014-12-31 14:38:19 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (1.6ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 10:51:07 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[35mUnidadeMedida Load (3.1ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas"
+  Rendered unidade_medidas/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 115ms (Views: 75.2ms | ActiveRecord: 3.1ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 10:51:07 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (28.2ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (52.7ms)
+Completed 200 OK in 65ms (Views: 63.3ms | ActiveRecord: 0.4ms)
+Started POST "/unidade_medidas" for 127.0.0.1 at 2015-01-02 10:51:07 +0000
+Processing by UnidadeMedidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "unidade_medida"=>{"unidade"=>"teste"}, "commit"=>"Create Unidade medida"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (8.8ms)[0m  INSERT INTO "unidade_medidas" ("created_at", "unidade", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 02 Jan 2015 10:51:08 UTC +00:00], ["unidade", "teste"], ["updated_at", Fri, 02 Jan 2015 10:51:08 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/unidade_medidas/1
+Completed 302 Found in 13ms (ActiveRecord: 8.9ms)
+Started GET "/unidade_medidas/1" for 127.0.0.1 at 2015-01-02 10:51:08 +0000
+Processing by UnidadeMedidasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUnidadeMedida Load (0.2ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas" WHERE "unidade_medidas"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered unidade_medidas/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 12ms (Views: 6.6ms | ActiveRecord: 0.2ms)
+  [1m[36m (1.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 10:51:08 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[36mUnidadeMedida Load (0.3ms)[0m  [1mSELECT "unidade_medidas".* FROM "unidade_medidas"[0m
+  Rendered unidade_medidas/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 10:51:08 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (2.9ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (3.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 11:06:09 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[35mUnidadeMedida Load (3.7ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas"
+  Rendered unidade_medidas/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 132ms (Views: 97.6ms | ActiveRecord: 3.7ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 11:06:09 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (38.8ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (75.8ms)
+Completed 200 OK in 85ms (Views: 83.7ms | ActiveRecord: 0.4ms)
+Started POST "/unidade_medidas" for 127.0.0.1 at 2015-01-02 11:06:09 +0000
+Processing by UnidadeMedidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "unidade_medida"=>{"unidade"=>"teste"}, "commit"=>"Create Unidade medida"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (15.3ms)[0m  INSERT INTO "unidade_medidas" ("created_at", "unidade", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 02 Jan 2015 11:06:09 UTC +00:00], ["unidade", "teste"], ["updated_at", Fri, 02 Jan 2015 11:06:09 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/unidade_medidas/1
+Completed 302 Found in 22ms (ActiveRecord: 15.6ms)
+Started GET "/unidade_medidas/1" for 127.0.0.1 at 2015-01-02 11:06:09 +0000
+Processing by UnidadeMedidasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUnidadeMedida Load (0.3ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas" WHERE "unidade_medidas"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered unidade_medidas/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 11ms (Views: 5.5ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 11:06:09 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[36mUnidadeMedida Load (0.3ms)[0m  [1mSELECT "unidade_medidas".* FROM "unidade_medidas"[0m
+  Rendered unidade_medidas/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 11:06:09 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (2.3ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 11:09:26 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[35mUnidadeMedida Load (3.3ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas"
+  Rendered unidade_medidas/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 114ms (Views: 83.0ms | ActiveRecord: 3.3ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 11:09:26 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (43.9ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (60.5ms)
+Completed 200 OK in 67ms (Views: 64.8ms | ActiveRecord: 0.6ms)
+Started POST "/unidade_medidas" for 127.0.0.1 at 2015-01-02 11:09:26 +0000
+Processing by UnidadeMedidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "unidade_medida"=>{"unidade"=>"teste"}, "commit"=>"Create Unidade medida"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (16.4ms)[0m  INSERT INTO "unidade_medidas" ("created_at", "unidade", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 02 Jan 2015 11:09:26 UTC +00:00], ["unidade", "teste"], ["updated_at", Fri, 02 Jan 2015 11:09:26 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/unidade_medidas/1
+Completed 302 Found in 21ms (ActiveRecord: 16.6ms)
+Started GET "/unidade_medidas/1" for 127.0.0.1 at 2015-01-02 11:09:26 +0000
+Processing by UnidadeMedidasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUnidadeMedida Load (0.2ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas" WHERE "unidade_medidas"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered unidade_medidas/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 15ms (Views: 6.9ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 11:09:26 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[36mUnidadeMedida Load (0.2ms)[0m  [1mSELECT "unidade_medidas".* FROM "unidade_medidas"[0m
+  Rendered unidade_medidas/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 11:09:26 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (1.6ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/welcome" for 127.0.0.1 at 2015-01-02 11:09:26 +0000
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 11:28:12 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[35mUnidadeMedida Load (3.9ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas"
+  Rendered unidade_medidas/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 278ms (Views: 180.2ms | ActiveRecord: 3.9ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 11:28:13 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (40.9ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (65.4ms)
+Completed 200 OK in 78ms (Views: 76.6ms | ActiveRecord: 0.4ms)
+Started POST "/unidade_medidas" for 127.0.0.1 at 2015-01-02 11:28:13 +0000
+Processing by UnidadeMedidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "unidade_medida"=>{"unidade"=>"teste"}, "commit"=>"Create Unidade medida"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (27.6ms)[0m  INSERT INTO "unidade_medidas" ("created_at", "unidade", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 02 Jan 2015 11:28:13 UTC +00:00], ["unidade", "teste"], ["updated_at", Fri, 02 Jan 2015 11:28:13 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/unidade_medidas/1
+Completed 302 Found in 34ms (ActiveRecord: 27.8ms)
+Started GET "/unidade_medidas/1" for 127.0.0.1 at 2015-01-02 11:28:13 +0000
+Processing by UnidadeMedidasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUnidadeMedida Load (0.3ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas" WHERE "unidade_medidas"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered unidade_medidas/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 14ms (Views: 10.2ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 11:28:13 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[36mUnidadeMedida Load (0.4ms)[0m  [1mSELECT "unidade_medidas".* FROM "unidade_medidas"[0m
+  Rendered unidade_medidas/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.4ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 11:28:13 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (3.0ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/welcome" for 127.0.0.1 at 2015-01-02 11:28:13 +0000
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 11:39:38 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[35mUnidadeMedida Load (5.2ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas"
+  Rendered unidade_medidas/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 184ms (Views: 148.1ms | ActiveRecord: 5.2ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 11:39:39 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (106.7ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (124.5ms)
+Completed 200 OK in 152ms (Views: 150.7ms | ActiveRecord: 0.4ms)
+Started POST "/unidade_medidas" for 127.0.0.1 at 2015-01-02 11:39:39 +0000
+Processing by UnidadeMedidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "unidade_medida"=>{"unidade"=>"teste"}, "commit"=>"Create Unidade medida"}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (8.5ms)[0m  INSERT INTO "unidade_medidas" ("created_at", "unidade", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 02 Jan 2015 11:39:39 UTC +00:00], ["unidade", "teste"], ["updated_at", Fri, 02 Jan 2015 11:39:39 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/unidade_medidas/1
+Completed 302 Found in 14ms (ActiveRecord: 8.8ms)
+Started GET "/unidade_medidas/1" for 127.0.0.1 at 2015-01-02 11:39:39 +0000
+Processing by UnidadeMedidasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUnidadeMedida Load (0.2ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas" WHERE "unidade_medidas"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered unidade_medidas/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 8ms (Views: 5.2ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 11:39:39 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[36mUnidadeMedida Load (0.2ms)[0m  [1mSELECT "unidade_medidas".* FROM "unidade_medidas"[0m
+  Rendered unidade_medidas/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 11:39:39 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (1.7ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/welcome" for 127.0.0.1 at 2015-01-02 11:39:39 +0000
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.8ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 11:43:42 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[35mUnidadeMedida Load (3.5ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas"
+  Rendered unidade_medidas/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 144ms (Views: 108.7ms | ActiveRecord: 3.5ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 11:43:42 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (37.0ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (44.8ms)
+Completed 200 OK in 50ms (Views: 48.7ms | ActiveRecord: 0.4ms)
+Started POST "/unidade_medidas" for 127.0.0.1 at 2015-01-02 11:43:42 +0000
+Processing by UnidadeMedidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "unidade_medida"=>{"unidade"=>"teste"}, "commit"=>"Create Unidade medida"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (14.8ms)[0m  INSERT INTO "unidade_medidas" ("created_at", "unidade", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 02 Jan 2015 11:43:42 UTC +00:00], ["unidade", "teste"], ["updated_at", Fri, 02 Jan 2015 11:43:42 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/unidade_medidas/1
+Completed 302 Found in 20ms (ActiveRecord: 15.0ms)
+Started GET "/unidade_medidas/1" for 127.0.0.1 at 2015-01-02 11:43:42 +0000
+Processing by UnidadeMedidasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUnidadeMedida Load (0.2ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas" WHERE "unidade_medidas"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered unidade_medidas/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 8ms (Views: 4.8ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 11:43:42 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[36mUnidadeMedida Load (0.3ms)[0m  [1mSELECT "unidade_medidas".* FROM "unidade_medidas"[0m
+  Rendered unidade_medidas/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 11:43:42 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (2.8ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/welcome" for 127.0.0.1 at 2015-01-02 11:43:42 +0000
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 11:47:05 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[35mUnidadeMedida Load (2.5ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas"
+  Rendered unidade_medidas/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 58ms (Views: 37.8ms | ActiveRecord: 2.5ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 11:47:05 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (25.1ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (31.6ms)
+Completed 200 OK in 36ms (Views: 34.1ms | ActiveRecord: 0.5ms)
+Started POST "/unidade_medidas" for 127.0.0.1 at 2015-01-02 11:47:05 +0000
+Processing by UnidadeMedidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "unidade_medida"=>{"unidade"=>"teste"}, "commit"=>"Create Unidade medida"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (6.5ms)[0m  INSERT INTO "unidade_medidas" ("created_at", "unidade", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 02 Jan 2015 11:47:05 UTC +00:00], ["unidade", "teste"], ["updated_at", Fri, 02 Jan 2015 11:47:05 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/unidade_medidas/1
+Completed 302 Found in 12ms (ActiveRecord: 6.7ms)
+Started GET "/unidade_medidas/1" for 127.0.0.1 at 2015-01-02 11:47:05 +0000
+Processing by UnidadeMedidasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUnidadeMedida Load (0.2ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas" WHERE "unidade_medidas"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered unidade_medidas/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 8ms (Views: 4.0ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 11:47:05 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[36mUnidadeMedida Load (0.3ms)[0m  [1mSELECT "unidade_medidas".* FROM "unidade_medidas"[0m
+  Rendered unidade_medidas/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 11:47:05 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (2.2ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/welcome" for 127.0.0.1 at 2015-01-02 11:47:05 +0000
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 11:50:22 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[35mUnidadeMedida Load (4.7ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas"
+  Rendered unidade_medidas/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 813ms (Views: 779.8ms | ActiveRecord: 4.7ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 11:50:23 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (26.1ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (32.2ms)
+Completed 200 OK in 38ms (Views: 35.5ms | ActiveRecord: 0.6ms)
+Started POST "/unidade_medidas" for 127.0.0.1 at 2015-01-02 11:50:23 +0000
+Processing by UnidadeMedidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "unidade_medida"=>{"unidade"=>"teste"}, "commit"=>"Create Unidade medida"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (34.2ms)[0m  INSERT INTO "unidade_medidas" ("created_at", "unidade", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 02 Jan 2015 11:50:23 UTC +00:00], ["unidade", "teste"], ["updated_at", Fri, 02 Jan 2015 11:50:23 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/unidade_medidas/1
+Completed 302 Found in 40ms (ActiveRecord: 34.5ms)
+Started GET "/unidade_medidas/1" for 127.0.0.1 at 2015-01-02 11:50:23 +0000
+Processing by UnidadeMedidasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUnidadeMedida Load (0.3ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas" WHERE "unidade_medidas"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered unidade_medidas/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 57ms (Views: 3.7ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 11:50:23 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[36mUnidadeMedida Load (0.3ms)[0m  [1mSELECT "unidade_medidas".* FROM "unidade_medidas"[0m
+  Rendered unidade_medidas/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 11:50:23 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (1.8ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/welcome" for 127.0.0.1 at 2015-01-02 11:50:24 +0000
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 11:54:30 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[35mUnidadeMedida Load (2.9ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas"
+  Rendered unidade_medidas/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 111ms (Views: 80.1ms | ActiveRecord: 2.9ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 11:54:31 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (29.9ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (41.7ms)
+Completed 200 OK in 47ms (Views: 45.5ms | ActiveRecord: 0.4ms)
+Started POST "/unidade_medidas" for 127.0.0.1 at 2015-01-02 11:54:31 +0000
+Processing by UnidadeMedidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "unidade_medida"=>{"unidade"=>"teste"}, "commit"=>"Create Unidade medida"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (8.6ms)[0m  INSERT INTO "unidade_medidas" ("created_at", "unidade", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 02 Jan 2015 11:54:31 UTC +00:00], ["unidade", "teste"], ["updated_at", Fri, 02 Jan 2015 11:54:31 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/unidade_medidas/1
+Completed 302 Found in 14ms (ActiveRecord: 8.8ms)
+Started GET "/unidade_medidas/1" for 127.0.0.1 at 2015-01-02 11:54:31 +0000
+Processing by UnidadeMedidasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUnidadeMedida Load (0.2ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas" WHERE "unidade_medidas"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered unidade_medidas/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 11:54:31 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[36mUnidadeMedida Load (0.2ms)[0m  [1mSELECT "unidade_medidas".* FROM "unidade_medidas"[0m
+  Rendered unidade_medidas/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 11:54:31 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (2.1ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/welcome" for 127.0.0.1 at 2015-01-02 11:54:31 +0000
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 11:58:48 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[35mUnidadeMedida Load (3.3ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas"
+  Rendered unidade_medidas/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 136ms (Views: 104.5ms | ActiveRecord: 3.3ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 11:58:49 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (38.4ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (49.8ms)
+Completed 200 OK in 57ms (Views: 55.0ms | ActiveRecord: 0.5ms)
+Started POST "/unidade_medidas" for 127.0.0.1 at 2015-01-02 11:58:49 +0000
+Processing by UnidadeMedidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "unidade_medida"=>{"unidade"=>"teste"}, "commit"=>"Create Unidade medida"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (13.9ms)[0m  INSERT INTO "unidade_medidas" ("created_at", "unidade", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 02 Jan 2015 11:58:49 UTC +00:00], ["unidade", "teste"], ["updated_at", Fri, 02 Jan 2015 11:58:49 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/unidade_medidas/1
+Completed 302 Found in 19ms (ActiveRecord: 14.1ms)
+Started GET "/unidade_medidas/1" for 127.0.0.1 at 2015-01-02 11:58:49 +0000
+Processing by UnidadeMedidasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUnidadeMedida Load (0.2ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas" WHERE "unidade_medidas"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered unidade_medidas/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 9ms (Views: 5.4ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 11:58:49 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[36mUnidadeMedida Load (0.3ms)[0m  [1mSELECT "unidade_medidas".* FROM "unidade_medidas"[0m
+  Rendered unidade_medidas/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 11:58:49 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (1.6ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/welcome" for 127.0.0.1 at 2015-01-02 11:58:49 +0000
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.8ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 11:59:12 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[35mUnidadeMedida Load (2.2ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas"
+  Rendered unidade_medidas/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 64ms (Views: 39.7ms | ActiveRecord: 2.2ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 11:59:12 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (21.5ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (26.9ms)
+Completed 200 OK in 32ms (Views: 29.9ms | ActiveRecord: 0.6ms)
+Started POST "/unidade_medidas" for 127.0.0.1 at 2015-01-02 11:59:12 +0000
+Processing by UnidadeMedidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "unidade_medida"=>{"unidade"=>"teste"}, "commit"=>"Create Unidade medida"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (6.7ms)[0m  INSERT INTO "unidade_medidas" ("created_at", "unidade", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 02 Jan 2015 11:59:12 UTC +00:00], ["unidade", "teste"], ["updated_at", Fri, 02 Jan 2015 11:59:12 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/unidade_medidas/1
+Completed 302 Found in 12ms (ActiveRecord: 7.0ms)
+Started GET "/unidade_medidas/1" for 127.0.0.1 at 2015-01-02 11:59:12 +0000
+Processing by UnidadeMedidasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUnidadeMedida Load (0.2ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas" WHERE "unidade_medidas"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered unidade_medidas/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 6ms (Views: 2.9ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 11:59:12 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[36mUnidadeMedida Load (0.2ms)[0m  [1mSELECT "unidade_medidas".* FROM "unidade_medidas"[0m
+  Rendered unidade_medidas/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 11:59:12 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (1.7ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/welcome" for 127.0.0.1 at 2015-01-02 11:59:12 +0000
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 12:02:43 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[35mUnidadeMedida Load (3.4ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas"
+  Rendered unidade_medidas/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 128ms (Views: 88.7ms | ActiveRecord: 3.4ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 12:02:43 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (32.0ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (39.9ms)
+Completed 200 OK in 45ms (Views: 43.7ms | ActiveRecord: 0.4ms)
+Started POST "/unidade_medidas" for 127.0.0.1 at 2015-01-02 12:02:43 +0000
+Processing by UnidadeMedidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "unidade_medida"=>{"unidade"=>"teste"}, "commit"=>"Create Unidade medida"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (12.8ms)[0m  INSERT INTO "unidade_medidas" ("created_at", "unidade", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 02 Jan 2015 12:02:43 UTC +00:00], ["unidade", "teste"], ["updated_at", Fri, 02 Jan 2015 12:02:43 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/unidade_medidas/1
+Completed 302 Found in 18ms (ActiveRecord: 13.1ms)
+Started GET "/unidade_medidas/1" for 127.0.0.1 at 2015-01-02 12:02:43 +0000
+Processing by UnidadeMedidasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUnidadeMedida Load (0.2ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas" WHERE "unidade_medidas"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered unidade_medidas/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 12:02:43 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[36mUnidadeMedida Load (0.2ms)[0m  [1mSELECT "unidade_medidas".* FROM "unidade_medidas"[0m
+  Rendered unidade_medidas/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 12:02:43 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (1.5ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.9ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 12:03:58 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[35mUnidadeMedida Load (3.3ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas"
+  Rendered unidade_medidas/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 162ms (Views: 106.7ms | ActiveRecord: 3.3ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 12:03:59 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (57.1ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (68.1ms)
+Completed 200 OK in 82ms (Views: 79.8ms | ActiveRecord: 0.5ms)
+Started POST "/unidade_medidas" for 127.0.0.1 at 2015-01-02 12:03:59 +0000
+Processing by UnidadeMedidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "unidade_medida"=>{"unidade"=>"teste"}, "commit"=>"Create Unidade medida"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (23.9ms)[0m  INSERT INTO "unidade_medidas" ("created_at", "unidade", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 02 Jan 2015 12:03:59 UTC +00:00], ["unidade", "teste"], ["updated_at", Fri, 02 Jan 2015 12:03:59 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/unidade_medidas/1
+Completed 302 Found in 32ms (ActiveRecord: 24.1ms)
+Started GET "/unidade_medidas/1" for 127.0.0.1 at 2015-01-02 12:03:59 +0000
+Processing by UnidadeMedidasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUnidadeMedida Load (0.3ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas" WHERE "unidade_medidas"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered unidade_medidas/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 22ms (Views: 11.6ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 12:03:59 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[36mUnidadeMedida Load (0.3ms)[0m  [1mSELECT "unidade_medidas".* FROM "unidade_medidas"[0m
+  Rendered unidade_medidas/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.3ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 12:03:59 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (1.9ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/welcome" for 127.0.0.1 at 2015-01-02 12:03:59 +0000
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 12:05:15 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[35mUnidadeMedida Load (3.2ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas"
+  Rendered unidade_medidas/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 137ms (Views: 93.9ms | ActiveRecord: 3.2ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 12:05:15 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (29.8ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (37.4ms)
+Completed 200 OK in 43ms (Views: 41.1ms | ActiveRecord: 0.4ms)
+Started POST "/unidade_medidas" for 127.0.0.1 at 2015-01-02 12:05:15 +0000
+Processing by UnidadeMedidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "unidade_medida"=>{"unidade"=>"teste"}, "commit"=>"Create Unidade medida"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (23.1ms)[0m  INSERT INTO "unidade_medidas" ("created_at", "unidade", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 02 Jan 2015 12:05:15 UTC +00:00], ["unidade", "teste"], ["updated_at", Fri, 02 Jan 2015 12:05:15 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/unidade_medidas/1
+Completed 302 Found in 29ms (ActiveRecord: 23.3ms)
+Started GET "/unidade_medidas/1" for 127.0.0.1 at 2015-01-02 12:05:15 +0000
+Processing by UnidadeMedidasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUnidadeMedida Load (0.4ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas" WHERE "unidade_medidas"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered unidade_medidas/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 13ms (Views: 6.2ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 12:05:16 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[36mUnidadeMedida Load (0.3ms)[0m  [1mSELECT "unidade_medidas".* FROM "unidade_medidas"[0m
+  Rendered unidade_medidas/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.3ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 12:05:16 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (1.7ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Started GET "/welcome" for 127.0.0.1 at 2015-01-02 12:05:16 +0000
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.9ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 12:06:07 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[35mUnidadeMedida Load (2.7ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas"
+  Rendered unidade_medidas/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 77ms (Views: 49.3ms | ActiveRecord: 2.7ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 12:06:07 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (42.4ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (51.7ms)
+Completed 200 OK in 59ms (Views: 55.7ms | ActiveRecord: 0.7ms)
+Started POST "/unidade_medidas" for 127.0.0.1 at 2015-01-02 12:06:07 +0000
+Processing by UnidadeMedidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "unidade_medida"=>{"unidade"=>"teste"}, "commit"=>"Create Unidade medida"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (6.8ms)[0m  INSERT INTO "unidade_medidas" ("created_at", "unidade", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 02 Jan 2015 12:06:07 UTC +00:00], ["unidade", "teste"], ["updated_at", Fri, 02 Jan 2015 12:06:07 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/unidade_medidas/1
+Completed 302 Found in 13ms (ActiveRecord: 7.0ms)
+Started GET "/unidade_medidas/1" for 127.0.0.1 at 2015-01-02 12:06:07 +0000
+Processing by UnidadeMedidasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUnidadeMedida Load (0.2ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas" WHERE "unidade_medidas"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered unidade_medidas/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 7ms (Views: 3.5ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 12:06:07 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[36mUnidadeMedida Load (0.2ms)[0m  [1mSELECT "unidade_medidas".* FROM "unidade_medidas"[0m
+  Rendered unidade_medidas/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 12:06:07 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (1.5ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/welcome" for 127.0.0.1 at 2015-01-02 12:06:07 +0000
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 12:08:41 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[35mUnidadeMedida Load (4.1ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas"
+  Rendered unidade_medidas/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 145ms (Views: 107.9ms | ActiveRecord: 4.1ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 12:08:41 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (31.9ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (39.8ms)
+Completed 200 OK in 46ms (Views: 44.2ms | ActiveRecord: 0.4ms)
+Started POST "/unidade_medidas" for 127.0.0.1 at 2015-01-02 12:08:41 +0000
+Processing by UnidadeMedidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "unidade_medida"=>{"unidade"=>"teste"}, "commit"=>"Create Unidade medida"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (9.4ms)[0m  INSERT INTO "unidade_medidas" ("created_at", "unidade", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 02 Jan 2015 12:08:41 UTC +00:00], ["unidade", "teste"], ["updated_at", Fri, 02 Jan 2015 12:08:41 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/unidade_medidas/1
+Completed 302 Found in 15ms (ActiveRecord: 9.6ms)
+Started GET "/unidade_medidas/1" for 127.0.0.1 at 2015-01-02 12:08:41 +0000
+Processing by UnidadeMedidasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUnidadeMedida Load (0.2ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas" WHERE "unidade_medidas"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered unidade_medidas/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 6ms (Views: 3.1ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 12:08:41 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[36mUnidadeMedida Load (0.3ms)[0m  [1mSELECT "unidade_medidas".* FROM "unidade_medidas"[0m
+  Rendered unidade_medidas/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 12:08:41 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (1.9ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 12:12:12 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[35mUnidadeMedida Load (2.5ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas"
+  Rendered unidade_medidas/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 56ms (Views: 35.4ms | ActiveRecord: 2.5ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 12:12:12 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (24.5ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (30.2ms)
+Completed 200 OK in 36ms (Views: 33.7ms | ActiveRecord: 0.4ms)
+Started POST "/unidade_medidas" for 127.0.0.1 at 2015-01-02 12:12:12 +0000
+Processing by UnidadeMedidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "unidade_medida"=>{"unidade"=>"teste"}, "commit"=>"Create Unidade medida"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (8.1ms)[0m  INSERT INTO "unidade_medidas" ("created_at", "unidade", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 02 Jan 2015 12:12:12 UTC +00:00], ["unidade", "teste"], ["updated_at", Fri, 02 Jan 2015 12:12:12 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/unidade_medidas/1
+Completed 302 Found in 14ms (ActiveRecord: 8.3ms)
+Started GET "/unidade_medidas/1" for 127.0.0.1 at 2015-01-02 12:12:12 +0000
+Processing by UnidadeMedidasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUnidadeMedida Load (0.2ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas" WHERE "unidade_medidas"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered unidade_medidas/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 7ms (Views: 3.7ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 12:12:12 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[36mUnidadeMedida Load (0.3ms)[0m  [1mSELECT "unidade_medidas".* FROM "unidade_medidas"[0m
+  Rendered unidade_medidas/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.3ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 12:12:12 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (1.8ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 12:13:06 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[35mUnidadeMedida Load (2.2ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas"
+  Rendered unidade_medidas/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 78ms (Views: 54.1ms | ActiveRecord: 2.2ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 12:13:06 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (26.7ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 39ms (Views: 36.6ms | ActiveRecord: 0.7ms)
+Started POST "/unidade_medidas" for 127.0.0.1 at 2015-01-02 12:13:06 +0000
+Processing by UnidadeMedidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "unidade_medida"=>{"unidade"=>"teste"}, "commit"=>"Create Unidade medida"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (29.3ms)[0m  INSERT INTO "unidade_medidas" ("created_at", "unidade", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 02 Jan 2015 12:13:06 UTC +00:00], ["unidade", "teste"], ["updated_at", Fri, 02 Jan 2015 12:13:06 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/unidade_medidas/1
+Completed 302 Found in 36ms (ActiveRecord: 29.5ms)
+Started GET "/unidade_medidas/1" for 127.0.0.1 at 2015-01-02 12:13:06 +0000
+Processing by UnidadeMedidasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUnidadeMedida Load (0.3ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas" WHERE "unidade_medidas"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered unidade_medidas/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 22ms (Views: 4.9ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 12:13:06 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[36mUnidadeMedida Load (0.4ms)[0m  [1mSELECT "unidade_medidas".* FROM "unidade_medidas"[0m
+  Rendered unidade_medidas/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.4ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 12:13:06 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (2.5ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 12:13:53 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[35mUnidadeMedida Load (3.1ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas"
+  Rendered unidade_medidas/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 133ms (Views: 101.5ms | ActiveRecord: 3.1ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 12:13:53 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (39.0ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (49.6ms)
+Completed 200 OK in 55ms (Views: 53.0ms | ActiveRecord: 0.4ms)
+Started POST "/unidade_medidas" for 127.0.0.1 at 2015-01-02 12:13:53 +0000
+Processing by UnidadeMedidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "unidade_medida"=>{"unidade"=>"teste"}, "commit"=>"Create Unidade medida"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (9.4ms)[0m  INSERT INTO "unidade_medidas" ("created_at", "unidade", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 02 Jan 2015 12:13:53 UTC +00:00], ["unidade", "teste"], ["updated_at", Fri, 02 Jan 2015 12:13:53 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/unidade_medidas/1
+Completed 302 Found in 15ms (ActiveRecord: 9.6ms)
+Started GET "/unidade_medidas/1" for 127.0.0.1 at 2015-01-02 12:13:53 +0000
+Processing by UnidadeMedidasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUnidadeMedida Load (0.3ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas" WHERE "unidade_medidas"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered unidade_medidas/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 17ms (Views: 6.1ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 12:13:53 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[36mUnidadeMedida Load (0.2ms)[0m  [1mSELECT "unidade_medidas".* FROM "unidade_medidas"[0m
+  Rendered unidade_medidas/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 12:13:53 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (1.6ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (1.9ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 12:26:23 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[35mUnidadeMedida Load (4.7ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas"
+  Rendered unidade_medidas/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 154ms (Views: 120.8ms | ActiveRecord: 4.7ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 12:26:23 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (66.3ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (130.0ms)
+Completed 200 OK in 159ms (Views: 156.4ms | ActiveRecord: 0.6ms)
+Started POST "/unidade_medidas" for 127.0.0.1 at 2015-01-02 12:26:23 +0000
+Processing by UnidadeMedidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "unidade_medida"=>{"unidade"=>"teste"}, "commit"=>"Create Unidade medida"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (17.2ms)[0m  INSERT INTO "unidade_medidas" ("created_at", "unidade", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 02 Jan 2015 12:26:23 UTC +00:00], ["unidade", "teste"], ["updated_at", Fri, 02 Jan 2015 12:26:23 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/unidade_medidas/1
+Completed 302 Found in 23ms (ActiveRecord: 17.5ms)
+Started GET "/unidade_medidas/1" for 127.0.0.1 at 2015-01-02 12:26:24 +0000
+Processing by UnidadeMedidasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUnidadeMedida Load (0.3ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas" WHERE "unidade_medidas"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered unidade_medidas/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 16ms (Views: 12.4ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 12:26:24 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[36mUnidadeMedida Load (0.2ms)[0m  [1mSELECT "unidade_medidas".* FROM "unidade_medidas"[0m
+  Rendered unidade_medidas/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 12:26:24 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (1.9ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/receita.html" for 127.0.0.1 at 2015-01-02 12:26:24 +0000
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 14:09:17 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[35mUnidadeMedida Load (4.7ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas"
+  Rendered unidade_medidas/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 437ms (Views: 402.1ms | ActiveRecord: 4.7ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 14:09:17 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (49.6ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (64.5ms)
+Completed 200 OK in 73ms (Views: 70.0ms | ActiveRecord: 0.7ms)
+Started POST "/unidade_medidas" for 127.0.0.1 at 2015-01-02 14:09:17 +0000
+Processing by UnidadeMedidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "unidade_medida"=>{"unidade"=>"teste"}, "commit"=>"Create Unidade medida"}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (21.9ms)[0m  INSERT INTO "unidade_medidas" ("created_at", "unidade", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 02 Jan 2015 14:09:17 UTC +00:00], ["unidade", "teste"], ["updated_at", Fri, 02 Jan 2015 14:09:17 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/unidade_medidas/1
+Completed 302 Found in 31ms (ActiveRecord: 22.2ms)
+Started GET "/unidade_medidas/1" for 127.0.0.1 at 2015-01-02 14:09:17 +0000
+Processing by UnidadeMedidasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUnidadeMedida Load (0.3ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas" WHERE "unidade_medidas"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered unidade_medidas/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 13ms (Views: 7.2ms | ActiveRecord: 0.3ms)
+  [1m[36m (1.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 14:09:17 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[36mUnidadeMedida Load (0.3ms)[0m  [1mSELECT "unidade_medidas".* FROM "unidade_medidas"[0m
+  Rendered unidade_medidas/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 14:09:17 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (2.3ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/../receita/new" for 127.0.0.1 at 2015-01-02 14:09:17 +0000
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 17:25:24 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[35mUnidadeMedida Load (2.0ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas"
+  Rendered unidade_medidas/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 164ms (Views: 134.3ms | ActiveRecord: 2.0ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 17:25:25 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (21.3ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (27.1ms)
+Completed 200 OK in 96ms (Views: 93.3ms | ActiveRecord: 0.6ms)
+Started POST "/unidade_medidas" for 127.0.0.1 at 2015-01-02 17:25:25 +0000
+Processing by UnidadeMedidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "unidade_medida"=>{"unidade"=>"teste"}, "commit"=>"Create Unidade medida"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (26.6ms)[0m  INSERT INTO "unidade_medidas" ("created_at", "unidade", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 02 Jan 2015 17:25:25 UTC +00:00], ["unidade", "teste"], ["updated_at", Fri, 02 Jan 2015 17:25:25 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/unidade_medidas/1
+Completed 302 Found in 32ms (ActiveRecord: 26.9ms)
+Started GET "/unidade_medidas/1" for 127.0.0.1 at 2015-01-02 17:25:25 +0000
+Processing by UnidadeMedidasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUnidadeMedida Load (0.2ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas" WHERE "unidade_medidas"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered unidade_medidas/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 8ms (Views: 4.5ms | ActiveRecord: 0.2ms)
+  [1m[36m (1.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 17:25:25 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[36mUnidadeMedida Load (0.3ms)[0m  [1mSELECT "unidade_medidas".* FROM "unidade_medidas"[0m
+  Rendered unidade_medidas/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 17:25:25 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (1.7ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/../receita/new" for 127.0.0.1 at 2015-01-02 17:25:25 +0000
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 17:37:46 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[35mUnidadeMedida Load (3.8ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas"
+  Rendered unidade_medidas/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 104ms (Views: 73.7ms | ActiveRecord: 3.8ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 17:37:47 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (21.5ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (27.7ms)
+Completed 200 OK in 32ms (Views: 30.3ms | ActiveRecord: 0.4ms)
+Started POST "/unidade_medidas" for 127.0.0.1 at 2015-01-02 17:37:47 +0000
+Processing by UnidadeMedidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "unidade_medida"=>{"unidade"=>"teste"}, "commit"=>"Create Unidade medida"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (23.7ms)[0m  INSERT INTO "unidade_medidas" ("created_at", "unidade", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 02 Jan 2015 17:37:47 UTC +00:00], ["unidade", "teste"], ["updated_at", Fri, 02 Jan 2015 17:37:47 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/unidade_medidas/1
+Completed 302 Found in 29ms (ActiveRecord: 23.9ms)
+Started GET "/unidade_medidas/1" for 127.0.0.1 at 2015-01-02 17:37:47 +0000
+Processing by UnidadeMedidasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUnidadeMedida Load (0.2ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas" WHERE "unidade_medidas"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered unidade_medidas/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 8ms (Views: 4.7ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 17:37:47 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[36mUnidadeMedida Load (0.2ms)[0m  [1mSELECT "unidade_medidas".* FROM "unidade_medidas"[0m
+  Rendered unidade_medidas/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 17:37:47 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (2.0ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/../receita/new" for 127.0.0.1 at 2015-01-02 17:37:47 +0000
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 17:59:14 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[35mUnidadeMedida Load (2.8ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas"
+  Rendered unidade_medidas/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 105ms (Views: 78.5ms | ActiveRecord: 2.8ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 17:59:14 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (20.4ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 32ms (Views: 30.6ms | ActiveRecord: 0.4ms)
+Started POST "/unidade_medidas" for 127.0.0.1 at 2015-01-02 17:59:14 +0000
+Processing by UnidadeMedidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "unidade_medida"=>{"unidade"=>"teste"}, "commit"=>"Create Unidade medida"}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (19.0ms)[0m  INSERT INTO "unidade_medidas" ("created_at", "unidade", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 02 Jan 2015 17:59:14 UTC +00:00], ["unidade", "teste"], ["updated_at", Fri, 02 Jan 2015 17:59:14 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/unidade_medidas/1
+Completed 302 Found in 27ms (ActiveRecord: 19.4ms)
+Started GET "/unidade_medidas/1" for 127.0.0.1 at 2015-01-02 17:59:14 +0000
+Processing by UnidadeMedidasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUnidadeMedida Load (0.2ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas" WHERE "unidade_medidas"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered unidade_medidas/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 10ms (Views: 5.6ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 17:59:14 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[36mUnidadeMedida Load (0.3ms)[0m  [1mSELECT "unidade_medidas".* FROM "unidade_medidas"[0m
+  Rendered unidade_medidas/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.3ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 17:59:14 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (3.0ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/index" for 127.0.0.1 at 2015-01-02 17:59:14 +0000
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 18:01:43 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[35mUnidadeMedida Load (3.1ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas"
+  Rendered unidade_medidas/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 104ms (Views: 73.9ms | ActiveRecord: 3.1ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 18:01:43 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (20.2ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (28.4ms)
+Completed 200 OK in 33ms (Views: 30.8ms | ActiveRecord: 0.4ms)
+Started POST "/unidade_medidas" for 127.0.0.1 at 2015-01-02 18:01:43 +0000
+Processing by UnidadeMedidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "unidade_medida"=>{"unidade"=>"teste"}, "commit"=>"Create Unidade medida"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (7.1ms)[0m  INSERT INTO "unidade_medidas" ("created_at", "unidade", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 02 Jan 2015 18:01:43 UTC +00:00], ["unidade", "teste"], ["updated_at", Fri, 02 Jan 2015 18:01:43 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/unidade_medidas/1
+Completed 302 Found in 12ms (ActiveRecord: 7.3ms)
+Started GET "/unidade_medidas/1" for 127.0.0.1 at 2015-01-02 18:01:43 +0000
+Processing by UnidadeMedidasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUnidadeMedida Load (0.2ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas" WHERE "unidade_medidas"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered unidade_medidas/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 8ms (Views: 4.6ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 18:01:43 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[36mUnidadeMedida Load (0.2ms)[0m  [1mSELECT "unidade_medidas".* FROM "unidade_medidas"[0m
+  Rendered unidade_medidas/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 18:01:43 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (1.7ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2015-01-02 18:01:43 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+Started GET "/receita/new" for 127.0.0.1 at 2015-01-02 18:01:43 +0000
+Processing by ReceitaController#new as HTML
+Completed 500 Internal Server Error in 2ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 18:05:32 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[35mUnidadeMedida Load (4.0ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas"
+  Rendered unidade_medidas/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 109ms (Views: 81.1ms | ActiveRecord: 4.0ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 18:05:32 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (27.4ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (34.3ms)
+Completed 200 OK in 39ms (Views: 37.3ms | ActiveRecord: 0.5ms)
+Started POST "/unidade_medidas" for 127.0.0.1 at 2015-01-02 18:05:32 +0000
+Processing by UnidadeMedidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "unidade_medida"=>{"unidade"=>"teste"}, "commit"=>"Create Unidade medida"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (7.8ms)[0m  INSERT INTO "unidade_medidas" ("created_at", "unidade", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 02 Jan 2015 18:05:32 UTC +00:00], ["unidade", "teste"], ["updated_at", Fri, 02 Jan 2015 18:05:32 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/unidade_medidas/1
+Completed 302 Found in 13ms (ActiveRecord: 8.0ms)
+Started GET "/unidade_medidas/1" for 127.0.0.1 at 2015-01-02 18:05:32 +0000
+Processing by UnidadeMedidasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUnidadeMedida Load (0.2ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas" WHERE "unidade_medidas"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered unidade_medidas/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 9ms (Views: 5.3ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 18:05:32 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[36mUnidadeMedida Load (0.4ms)[0m  [1mSELECT "unidade_medidas".* FROM "unidade_medidas"[0m
+  Rendered unidade_medidas/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.4ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 18:05:32 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (2.4ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2015-01-02 18:05:32 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+Started GET "/receita/new" for 127.0.0.1 at 2015-01-02 18:05:32 +0000
+Processing by ReceitaController#new as HTML
+Completed 500 Internal Server Error in 4ms
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (1.9ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 18:11:54 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[35mUnidadeMedida Load (2.8ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas"
+  Rendered unidade_medidas/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 125ms (Views: 95.0ms | ActiveRecord: 2.8ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 18:11:54 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (20.8ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (26.9ms)
+Completed 200 OK in 31ms (Views: 29.3ms | ActiveRecord: 0.4ms)
+Started POST "/unidade_medidas" for 127.0.0.1 at 2015-01-02 18:11:54 +0000
+Processing by UnidadeMedidasController#create as HTML
+  Parameters: {"utf8"=>"✓", "unidade_medida"=>{"unidade"=>"teste"}, "commit"=>"Create Unidade medida"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (8.3ms)[0m  INSERT INTO "unidade_medidas" ("created_at", "unidade", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 02 Jan 2015 18:11:54 UTC +00:00], ["unidade", "teste"], ["updated_at", Fri, 02 Jan 2015 18:11:54 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/unidade_medidas/1
+Completed 302 Found in 14ms (ActiveRecord: 8.6ms)
+Started GET "/unidade_medidas/1" for 127.0.0.1 at 2015-01-02 18:11:54 +0000
+Processing by UnidadeMedidasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUnidadeMedida Load (0.2ms)[0m  SELECT "unidade_medidas".* FROM "unidade_medidas" WHERE "unidade_medidas"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered unidade_medidas/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 10ms (Views: 6.2ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-01-02 18:11:54 +0000
+Processing by UnidadeMedidasController#index as HTML
+  [1m[36mUnidadeMedida Load (0.3ms)[0m  [1mSELECT "unidade_medidas".* FROM "unidade_medidas"[0m
+  Rendered unidade_medidas/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.3ms)
+Started GET "/unidade_medidas/new" for 127.0.0.1 at 2015-01-02 18:11:54 +0000
+Processing by UnidadeMedidasController#new as HTML
+  Rendered unidade_medidas/_form.html.erb (1.6ms)
+  Rendered unidade_medidas/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2015-01-02 18:11:54 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+Started GET "/receita/new" for 127.0.0.1 at 2015-01-02 18:11:54 +0000
+Processing by ReceitaController#new as HTML
+Completed 500 Internal Server Error in 3ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (53.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-04-01 22:08:19 +0000
+Processing by UnidadeMedidasController#index as HTML
+Completed 500 Internal Server Error in 24ms
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-04-01 22:08:19 +0000
+Processing by UnidadeMedidasController#index as HTML
+Completed 500 Internal Server Error in 5ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2015-04-01 22:08:19 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 77ms (Views: 76.1ms | ActiveRecord: 0.0ms)
+Started GET "/receita/new" for 127.0.0.1 at 2015-04-01 22:08:19 +0000
+Processing by ReceitaController#new as HTML
+Completed 500 Internal Server Error in 8ms
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-04-01 22:15:42 +0000
+Processing by UnidadeMedidasController#index as HTML
+Completed 500 Internal Server Error in 76ms
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/unidade_medidas" for 127.0.0.1 at 2015-04-01 22:15:42 +0000
+Processing by UnidadeMedidasController#index as HTML
+Completed 500 Internal Server Error in 2ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2015-04-01 22:15:42 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 52ms (Views: 50.9ms | ActiveRecord: 0.0ms)
+Started GET "/receita/new" for 127.0.0.1 at 2015-04-01 22:15:42 +0000
+Processing by ReceitaController#new as HTML
+Completed 500 Internal Server Error in 6ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/ingredientes" for 127.0.0.1 at 2015-04-02 08:47:48 +0000
+Processing by IngredientesController#index as HTML
+Completed 500 Internal Server Error in 14ms
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (1.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/ingredientes" for 127.0.0.1 at 2015-04-02 16:26:50 +0000
+Processing by IngredientesController#index as HTML
+Completed 500 Internal Server Error in 17ms
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/ingredientes" for 127.0.0.1 at 2015-04-02 16:28:37 +0000
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/ingredient" for 127.0.0.1 at 2015-04-02 16:31:40 +0000
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/ingredient" for 127.0.0.1 at 2015-04-02 16:35:46 +0000
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.8ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/ingredients" for 127.0.0.1 at 2015-04-02 16:36:59 +0000
+Processing by IngredientsController#index as HTML
+  [1m[35mIngredient Load (0.7ms)[0m  SELECT "ingredients".* FROM "ingredients"
+SQLite3::SQLException: no such table: ingredients: SELECT "ingredients".* FROM "ingredients"
+  Rendered ingredients/index.html.erb within layouts/application (10.7ms)
+Completed 500 Internal Server Error in 111ms
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/ingredients" for 127.0.0.1 at 2015-04-02 16:41:13 +0000
+Processing by IngredientsController#index as HTML
+  [1m[35mIngredient Load (0.6ms)[0m  SELECT "ingredients".* FROM "ingredients"
+SQLite3::SQLException: no such table: ingredients: SELECT "ingredients".* FROM "ingredients"
+  Rendered ingredients/index.html.erb within layouts/application (13.7ms)
+Completed 500 Internal Server Error in 115ms
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/ingredients" for 127.0.0.1 at 2015-04-02 16:51:23 +0000
+Processing by IngredientsController#index as HTML
+  [1m[35mIngredient Load (3.0ms)[0m  SELECT "ingredients".* FROM "ingredients"
+  Rendered ingredients/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 770ms (Views: 746.9ms | ActiveRecord: 3.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/ingredients" for 127.0.0.1 at 2015-04-02 16:56:06 +0000
+Processing by IngredientsController#index as HTML
+  [1m[35mIngredient Load (2.4ms)[0m  SELECT "ingredients".* FROM "ingredients"
+  Rendered ingredients/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 129ms (Views: 41.0ms | ActiveRecord: 2.4ms)
+Started GET "/ingredients/new" for 127.0.0.1 at 2015-04-02 16:56:07 +0000
+Processing by IngredientsController#new as HTML
+  Rendered ingredients/_form.html.erb (29.7ms)
+  Rendered ingredients/new.html.erb within layouts/application (36.9ms)
+Completed 200 OK in 42ms (Views: 39.9ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.9ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/ingredients" for 127.0.0.1 at 2015-04-02 17:15:59 +0000
+Processing by IngredientsController#index as HTML
+  [1m[35mIngredient Load (2.7ms)[0m  SELECT "ingredients".* FROM "ingredients"
+  Rendered ingredients/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 96ms (Views: 66.7ms | ActiveRecord: 2.7ms)
+Started GET "/ingredients/new" for 127.0.0.1 at 2015-04-02 17:15:59 +0000
+Processing by IngredientsController#new as HTML
+  Rendered ingredients/_form.html.erb (25.6ms)
+  Rendered ingredients/new.html.erb within layouts/application (32.2ms)
+Completed 200 OK in 39ms (Views: 35.7ms | ActiveRecord: 1.3ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/ingredients" for 127.0.0.1 at 2015-04-02 17:17:12 +0000
+Processing by IngredientsController#index as HTML
+  [1m[35mIngredient Load (3.8ms)[0m  SELECT "ingredients".* FROM "ingredients"
+  Rendered ingredients/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 68ms (Views: 42.8ms | ActiveRecord: 3.8ms)
+Started GET "/ingredients/new" for 127.0.0.1 at 2015-04-02 17:17:12 +0000
+Processing by IngredientsController#new as HTML
+  Rendered ingredients/_form.html.erb (27.2ms)
+  Rendered ingredients/new.html.erb within layouts/application (32.9ms)
+Completed 200 OK in 102ms (Views: 100.6ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.8ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/ingredients" for 127.0.0.1 at 2015-04-02 17:18:50 +0000
+Processing by IngredientsController#index as HTML
+  [1m[35mIngredient Load (3.3ms)[0m  SELECT "ingredients".* FROM "ingredients"
+  Rendered ingredients/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 149ms (Views: 57.3ms | ActiveRecord: 3.3ms)
+Started GET "/ingredients/new" for 127.0.0.1 at 2015-04-02 17:18:50 +0000
+Processing by IngredientsController#new as HTML
+  Rendered ingredients/_form.html.erb (28.8ms)
+  Rendered ingredients/new.html.erb within layouts/application (35.6ms)
+Completed 200 OK in 41ms (Views: 38.6ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.8ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/ingredients" for 127.0.0.1 at 2015-04-02 17:20:02 +0000
+Processing by IngredientsController#index as HTML
+  [1m[35mIngredient Load (4.8ms)[0m  SELECT "ingredients".* FROM "ingredients"
+  Rendered ingredients/index.html.erb within layouts/application (76.2ms)
+Completed 200 OK in 139ms (Views: 112.0ms | ActiveRecord: 4.8ms)
+Started GET "/ingredients/new" for 127.0.0.1 at 2015-04-02 17:20:02 +0000
+Processing by IngredientsController#new as HTML
+  Rendered ingredients/_form.html.erb (37.8ms)
+  Rendered ingredients/new.html.erb within layouts/application (45.9ms)
+Completed 200 OK in 53ms (Views: 50.1ms | ActiveRecord: 0.7ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36m (1.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/ingredients" for 127.0.0.1 at 2015-04-02 17:24:31 +0000
+Processing by IngredientsController#index as HTML
+  [1m[35mIngredient Load (3.2ms)[0m  SELECT "ingredients".* FROM "ingredients"
+  Rendered ingredients/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 149ms (Views: 121.1ms | ActiveRecord: 3.2ms)
+Started GET "/ingredients/new" for 127.0.0.1 at 2015-04-02 17:24:31 +0000
+Processing by IngredientsController#new as HTML
+  Rendered ingredients/_form.html.erb (28.8ms)
+  Rendered ingredients/new.html.erb within layouts/application (36.8ms)
+Completed 200 OK in 43ms (Views: 41.3ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/ingredients" for 127.0.0.1 at 2015-04-02 17:25:05 +0000
+Processing by IngredientsController#index as HTML
+  [1m[35mIngredient Load (2.6ms)[0m  SELECT "ingredients".* FROM "ingredients"
+  Rendered ingredients/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 83ms (Views: 56.8ms | ActiveRecord: 2.6ms)
+Started GET "/ingredients/new" for 127.0.0.1 at 2015-04-02 17:25:05 +0000
+Processing by IngredientsController#new as HTML
+  Rendered ingredients/_form.html.erb (93.5ms)
+  Rendered ingredients/new.html.erb within layouts/application (101.0ms)
+Completed 200 OK in 106ms (Views: 104.1ms | ActiveRecord: 0.6ms)
+Started POST "/ingredients" for 127.0.0.1 at 2015-04-02 17:25:05 +0000
+Processing by IngredientsController#create as HTML
+  Parameters: {"utf8"=>"✓", "ingredient"=>{"measurment_unit_id"=>"gr", "description"=>"batatas"}, "commit"=>"Criar Ingrediente"}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (7.7ms)[0m  INSERT INTO "ingredients" ("created_at", "description", "measurment_unit_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 02 Apr 2015 17:25:05 UTC +00:00], ["description", "batatas"], ["measurment_unit_id", 0], ["updated_at", Thu, 02 Apr 2015 17:25:05 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ingredients/1
+Completed 302 Found in 14ms (ActiveRecord: 8.0ms)
+Started GET "/ingredients/1" for 127.0.0.1 at 2015-04-02 17:25:05 +0000
+Processing by IngredientsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mIngredient Load (0.3ms)[0m  SELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered ingredients/show.html.erb within layouts/application (21.0ms)
+Completed 500 Internal Server Error in 30ms
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.9ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/ingredients" for 127.0.0.1 at 2015-04-02 17:27:58 +0000
+Processing by IngredientsController#index as HTML
+  [1m[35mIngredient Load (2.6ms)[0m  SELECT "ingredients".* FROM "ingredients"
+  Rendered ingredients/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 130ms (Views: 105.5ms | ActiveRecord: 2.6ms)
+Started GET "/ingredients/new" for 127.0.0.1 at 2015-04-02 17:27:58 +0000
+Processing by IngredientsController#new as HTML
+  Rendered ingredients/_form.html.erb (25.4ms)
+  Rendered ingredients/new.html.erb within layouts/application (31.3ms)
+Completed 200 OK in 37ms (Views: 34.8ms | ActiveRecord: 0.8ms)
+Started POST "/ingredients" for 127.0.0.1 at 2015-04-02 17:27:58 +0000
+Processing by IngredientsController#create as HTML
+  Parameters: {"utf8"=>"✓", "ingredient"=>{"measurment_unit_id"=>"gr", "description"=>"batatas"}, "commit"=>"Criar Ingrediente"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (6.9ms)[0m  INSERT INTO "ingredients" ("created_at", "description", "measurment_unit_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 02 Apr 2015 17:27:58 UTC +00:00], ["description", "batatas"], ["measurment_unit_id", 0], ["updated_at", Thu, 02 Apr 2015 17:27:58 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ingredients/1
+Completed 302 Found in 13ms (ActiveRecord: 7.1ms)
+Started GET "/ingredients/1" for 127.0.0.1 at 2015-04-02 17:27:58 +0000
+Processing by IngredientsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mIngredient Load (0.3ms)[0m  SELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered ingredients/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 7ms (Views: 3.6ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.9ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/ingredients" for 127.0.0.1 at 2015-04-02 18:14:41 +0000
+Processing by IngredientsController#index as HTML
+  [1m[35mIngredient Load (4.9ms)[0m  SELECT "ingredients".* FROM "ingredients"
+  Rendered ingredients/index.html.erb within layouts/application (72.2ms)
+Completed 200 OK in 163ms (Views: 126.0ms | ActiveRecord: 4.9ms)
+Started GET "/ingredients/new" for 127.0.0.1 at 2015-04-02 18:14:41 +0000
+Processing by IngredientsController#new as HTML
+  Rendered ingredients/_form.html.erb (33.4ms)
+  Rendered ingredients/new.html.erb within layouts/application (43.5ms)
+Completed 200 OK in 50ms (Views: 46.9ms | ActiveRecord: 0.6ms)
+Started POST "/ingredients" for 127.0.0.1 at 2015-04-02 18:14:41 +0000
+Processing by IngredientsController#create as HTML
+  Parameters: {"utf8"=>"✓", "ingredient"=>{"measurment_unit_id"=>"gr", "description"=>"batatas"}, "commit"=>"Criar Ingrediente"}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (80.1ms)[0m  INSERT INTO "ingredients" ("created_at", "description", "measurment_unit_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 02 Apr 2015 18:14:41 UTC +00:00], ["description", "batatas"], ["measurment_unit_id", 0], ["updated_at", Thu, 02 Apr 2015 18:14:41 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ingredients/1
+Completed 302 Found in 89ms (ActiveRecord: 80.4ms)
+Started GET "/ingredients/1" for 127.0.0.1 at 2015-04-02 18:14:41 +0000
+Processing by IngredientsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mIngredient Load (0.3ms)[0m  SELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered ingredients/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 14ms (Views: 7.2ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/ingredients" for 127.0.0.1 at 2015-04-02 18:22:45 +0000
+Processing by IngredientsController#index as HTML
+Completed 500 Internal Server Error in 18ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/ingredients" for 127.0.0.1 at 2015-04-06 08:23:38 +0000
+Processing by IngredientsController#index as HTML
+Completed 500 Internal Server Error in 29ms
+  [1m[35m (0.2ms)[0m  rollback transaction

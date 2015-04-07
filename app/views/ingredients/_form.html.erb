@@ -1,0 +1,24 @@
+<%= form_for([@measurement_unit,@ingredient]) do |f| %>
+  <% if @ingredient.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ingredient.errors.count, "error") %> prohibited this ingredient from being saved:</h2>
+
+      <ul>
+      <% @ingredient.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field">
+    <%= f.label "Unidade de Medida" %><br>
+    <%= f.text_field :measurement_unit_id %>
+  </div>
+  <div class="field">
+    <%= f.label "Descrição" %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Criar Ingrediente"%>
+  </div>
+<% end %>

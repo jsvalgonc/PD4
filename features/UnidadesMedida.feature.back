@@ -1,0 +1,17 @@
+Feature: Manutenção de Unidade de Media
+ 
+Scenario: Cria uma unidade de medida
+    Given I am on the unidadesDeMedida
+    When I follow "New Unidade medida"
+    And I fill in "unidade_medida_unidade" with "teste"
+    When I press "Create Unidade medida"
+    Then page should have notice message "Ingrediente was successfully created."
+    
+Scenario: Altera uma unidade de media
+      Given I am on the unidadesDeMedida
+      When I follow "New Unidade medida"
+      
+  
+Scenario: Apaga uma unidade de medida
+
+    

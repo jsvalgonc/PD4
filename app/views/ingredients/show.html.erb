@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Measurement unit:</strong>
+  <%= @ingredient.measurement_unit_id %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @ingredient.description %>
+</p>
+
+<%= link_to 'Edit', edit_measurement_unit_ingredient_path(@measurement_unit,@ingredient) %> |
+<%= link_to 'Back', measurmente_unit_ingredients_path %>
+

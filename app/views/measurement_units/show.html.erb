@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Unit:</strong>
+  <%= @measurement_unit.Unit %>
+</p>
+
+<p>
+  <strong>Symbol:</strong>
+  <%= @measurement_unit.Symbol %>
+</p>
+
+<%= link_to 'Edit', edit_measurement_unit_path(@measurement_unit) %> |
+<%= link_to 'Back', measurement_units_path %>
