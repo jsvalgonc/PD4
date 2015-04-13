@@ -14,7 +14,6 @@ bundle exec cucumber
 Aplicação corre em:
 https://pd4mealplanner-joaogoncalvespd4.c9.io/
 
-
 Criar Aplicação: rails news NOMEDAAPLICACAO
 Ligar Servidor: rail s 
 
@@ -70,8 +69,6 @@ Exemplo de ligar tabelas
 rails generate scaffold line_item product_id:integer cart_id:integer
 
 
-
-
 HEROKU
 
 vast-fortress-3222.herokuapp.com/movies
@@ -88,6 +85,16 @@ git status
 git add * (-f) = adicionar ficheiros - quando se cria novos
 git commit -m "nome"
 git log (sair: q)
+
+no C9 
+
+user:jsvalgonc@hotmail.com
+password:password1
+
+criar git- git init
+criar remote - git remote add pd4mealplanner https://github.com/jsvalgonc/PD4.git
+adicionar ficheiros - git add * -f
+commit to GitHub - git push pd4mealplanner master
 
 debugger
 
@@ -112,6 +119,13 @@ Escrever no log os parametros
     params.each do |key,value|
       Rails.logger.warn "JG " + "Param #{key}: #{value}"
     end
+    
+nested forms
+http://www.createdbypete.com/articles/working-with-nested-forms-and-a-many-to-many-association-in-rails-4/
+http://asciicasts.com/episodes/196-nested-model-form-part-1
+
+
+
 
 
 

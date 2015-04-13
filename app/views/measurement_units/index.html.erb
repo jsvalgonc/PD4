@@ -1,10 +1,10 @@
-<h1>Listing measurement_units</h1>
+<h1>Unidades de Medida</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Unit</th>
-      <th>Symbol</th>
+      <th>Unidades</th>
+      <th>Simbolo</th>
       <th></th>
       <th></th>
       <th></th>
@@ -16,14 +16,12 @@
       <tr>
         <td><%= measurement_unit.Unit %></td>
         <td><%= measurement_unit.Symbol %></td>
-        <td><%= link_to 'Show', measurement_unit %></td>
-        <td><%= link_to 'Edit', edit_measurement_unit_path(measurement_unit) %></td>
-        <td><%= link_to 'Destroy', measurement_unit, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', measurement_unit %></td>
+        <td><%= link_to 'Editar', edit_measurement_unit_path(measurement_unit) %></td>
+        <td><%= link_to 'Apagar', measurement_unit, method: :delete, data: { confirm: 'Tem a certeza?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-
 <br>
-
-<%= link_to 'New Measurement unit', new_measurement_unit_path %>
+<%= link_to 'Nova Unidade de Medida', new_measurement_unit_path %>

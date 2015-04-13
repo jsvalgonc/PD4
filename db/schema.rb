@@ -11,16 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150406152436) do
+ActiveRecord::Schema.define(version: 20150412161358) do
+
+  create_table "answers", force: true do |t|
+    t.integer  "question_id"
+    t.integer  "participant_id"
+    t.text     "content"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "answers", ["participant_id"], name: "index_answers_on_participant_id"
+  add_index "answers", ["question_id"], name: "index_answers_on_question_id"
 
   create_table "ingredients", force: true do |t|
-    t.string   "description"
+    t.string   "description",         limit: nil
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "measurement_unit_id"
   end
-
-  add_index "ingredients", ["measurement_unit_id"], name: "index_ingredients_on_measurement_unit_id"
 
   create_table "measurement_units", force: true do |t|
     t.string   "Unit"
@@ -29,9 +38,53 @@ ActiveRecord::Schema.define(version: 20150406152436) do
     t.datetime "updated_at"
   end
 
+  create_table "questions", force: true do |t|
+    t.text     "content"
+    t.integer  "survey_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "questions", ["survey_id"], name: "index_questions_on_survey_id"
+
   create_table "receita", force: true do |t|
     t.string   "descricao"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "recipe_ingredients", force: true do |t|
+    t.text     "content"
+    t.integer  "ingredient_id"
+    t.integer  "recipe_id"
+    t.decimal  "amout"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "recipe_ingredients", ["ingredient_id"], name: "index_recipe_ingredients_on_ingredient_id"
+  add_index "recipe_ingredients", ["recipe_id"], name: "index_recipe_ingredients_on_recipe_id"
+
+  create_table "recipes", force: true do |t|
+    t.string   "title"
+    t.text     "procedure"
+    t.decimal  "preparationTime"
+    t.decimal  "cookingTime"
+    t.decimal  "serves"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "surveys", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "unidade_medidas", force: true do |t|
+    t.string   "unidade"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
 end

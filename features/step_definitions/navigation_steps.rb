@@ -105,4 +105,5 @@ Given "I confirm the dialog" do
 end
 
 
+
 World(NavigationHelpers)

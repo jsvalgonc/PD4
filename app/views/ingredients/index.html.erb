@@ -1,5 +1,4 @@
-<h1>Ingredientes em <%=@measurement_unit.Unit%> </h1>
-<% if !@measurement_unit.ingredients.empty? %>
+<h1>Ingredientes</h1>
 <table>
   <thead>
     <tr>
@@ -13,20 +12,17 @@
   <tbody>
     <% @ingredients.each do |ingredient| %>
       <tr>
-        <td><%= ingredient.measurement_unit_id %></td>
         <td><%= ingredient.description %></td>
-        <td><%= link_to 'Show', [@measurement_unit, ingredient] %></td>
-        <td><%= link_to 'Edit', edit_measurement_unit_ingredient_path(@measurement_unit, ingredient) %></td>
-        <td><%= link_to 'Destroy', [@measurement_unit, ingredient], :confirm => 'Tem a certeza?', :method => :delete %></td>
+        <td><%= (MeasurementUnit.find_by_id(ingredient.measurement_unit_id)).Unit %></td>
+        <td><%= link_to 'Mostrar', ingredient%></td>
+        <td><%= link_to 'Editar', edit_ingredient_path(ingredient)%></td>
+        <td><%= link_to 'Apagar', ingredient, method: :delete, data: { confirm: 'Tem a certeza?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-<% else %>
-  <p>Não existe ainda ingredientes em <%=@measurement_unit.Unit%>.</p>
-<% end %>
 <br>
 
-<%= link_to 'Novo Ingrediente', new_measurement_unit_ingredient_path(@measurement_unit) %>
+<%-# link_to 'Novo Ingrediente', new_measurement_unit_ingredient_path(@measurement_unit) -%>
 
-<%-# link_to 'Novo Ingrediente', new_ingredient_path -%>
+<%= link_to 'Novo Ingrediente', new_ingredient_path%>

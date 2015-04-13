@@ -10,15 +10,15 @@
       </ul>
     </div>
   <% end %>
-  <div class="field">
-    <%= f.label "Unidade de Medida" %><br>
-    <%= f.text_field :measurement_unit_id %>
-  </div>
+    <div class="field" select id="Unidade">
+      <%= f.label "Unidade de Medida" %><br>
+      <%= f.collection_select :measurement_unit_id, MeasurementUnit.order(:Unit),:id,:Unit, include_blank: true %>
+     </div>
   <div class="field">
     <%= f.label "Descrição" %><br>
     <%= f.text_field :description %>
   </div>
   <div class="actions">
-    <%= f.submit "Criar Ingrediente"%>
+    <%= f.submit %>
   </div>
 <% end %>
