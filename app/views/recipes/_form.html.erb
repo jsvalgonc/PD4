@@ -14,9 +14,7 @@
   <div class="field">
     <%= f.text_field :title %>
   </div>
-  
   <table>
-
   <tr>
     <td>
   <div class="field">
@@ -39,29 +37,15 @@
     </td>
   </tr>
 </table>
-
-<table>
-  <tr>
-    <th>Ingrediente</th>
-    <th>Quantidade</th>
-  </tr>
-
-   <%= f.fields_for :recipe_ingredients do |ff| %>
-    <tr>
-    <td>
+   <%= f.fields_for(:recipe_ingredients) do |ff| %>  
     <div>
       <%= ff.text_field :ingredient_id %>
     </div>
-    </td>
-    <td>
     <div>
       <%= ff.text_field :amout %>
     </div>
-    </td>
-    </tr>
   <% end %>
 </table>
-
   <div class="field">
     <%= f.label 'Procedimento' %><br>
     <%= f.text_area :procedure %>

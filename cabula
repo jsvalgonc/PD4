@@ -89,12 +89,13 @@ git log (sair: q)
 no C9 
 
 user:jsvalgonc@hotmail.com
-password:password1
+password:palavrapasse1
 
 criar git- git init
 criar remote - git remote add pd4mealplanner https://github.com/jsvalgonc/PD4.git
-adicionar ficheiros - git add * -f
-commit to GitHub - git push pd4mealplanner master
+adicionar ficheiros - git add --all (-f)
+commit - git commit -m 'added new files' (colocar o nome da versão)
+push - git push pd4mealplanner master
 
 debugger
 

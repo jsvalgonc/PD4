@@ -25,12 +25,18 @@ class RecipesController < ApplicationController
   def edit
     @recipe = Recipe.find(params[:id])
     @recipe.recipe_ingredients.build
+    #@recipe.recipe_ingredients.build
   end
 
   # POST /recipes
   # POST /recipes.json
   def create
     @recipe = Recipe.new(recipe_params)
+    #recipe_params[:recipe_ingredients_attributes.each do |recipe_ingredients|
+    #@recipe.recipe_ingredients.build(:recipe_ingredients => recipe_ingredients)
+    #end
+    #@recipe.recipe_ingredients.build
+    
     respond_to do |format|
       if @recipe.save
         format.html { redirect_to @recipe, notice: 'Recipe was successfully created.' }
@@ -66,12 +72,12 @@ class RecipesController < ApplicationController
     end
   end
   
-    def recipe_ingredients
-      #@ingredients = Ingredient.all
-      #@recipe = Recipe.find(params[:id])
-      #@recipe.recipe_ingredients.build
-      #@recipe_ingredients = @recipe.recipe_ingredients
-    end
+    #def recipe_ingredients
+    #  @ingredients = Ingrediente.all
+    #  @recipe = Recipe.find(params[:id])
+    #  @recipe.recipe_ingredients.build
+    #  @recipe_ingredients = @recipe.recipe_ingredients
+    #end
     
     #def recipe_ingredients
     #  @recipe = Recipe.find(params[:id])
@@ -87,12 +93,14 @@ class RecipesController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_recipe
       @recipe = Recipe.find(params[:id])
+      #@recipe = Recipe.find(1)
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def recipe_params
       params.require(:recipe).permit(:id, :title, :procedure, :preparationTime, :cookingTime, :serves,
-        recipe_ingredients => [:recipe_id, :ingredient_id, :amout]
+        recipe_ingredients_attributes: [:id,:recipe_id, :ingredient_id, :amout]
+        #recipe_ingredients => [:recipe_id, :ingredient_id, :amout]
       )
     end
 
