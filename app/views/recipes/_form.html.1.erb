@@ -41,11 +41,7 @@
 <tr><td>Ingrediente</td><td>Quantidade</td></tr>
    <%= f.fields_for(:recipe_ingredients) do |ff| %>  
     <tr><td>
-    
-      <div class="field">
-        <%= ff.select :ingredient_id, Ingredient.find(:all , :order => "description").collect {|s|
-          [(s.description), s.id]} %>
-      </div>
+      <%= ff.text_field :ingredient_id %>
     </td>
     <td>
       <%= ff.text_field :amout %>

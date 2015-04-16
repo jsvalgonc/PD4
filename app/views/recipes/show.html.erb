@@ -25,17 +25,23 @@
   <tr>
     <th>Ingrediente</th>
     <th>Quantidade</th>
+    <th></th>
   </tr>
    <% @recipe.recipe_ingredients.each do |ff| %>
     <tr>
     <td>
     <div>
-      <%= ff.ingredient_id %>
+      <%= ff.ingredient.description %>
     </div>
     </td>
     <td>
     <div>
       <%= ff.amout %>
+    </div>
+    </td>
+    <td>
+    <div>
+      <%= ff.ingredient.measurement_unit_id %>
     </div>
     </td>
     </tr>
