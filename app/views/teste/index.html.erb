@@ -1,0 +1,14 @@
+TESTE
+  <table width=100%">
+    <%@nutrients.each do |u|%>
+    <tr>
+      <td><%=u%> * </td>
+      <td><%=u[1][:foods][0][:nutrients][0][:value]%> x</td>
+      <td> XXXX <%=@tipo%> XXXX </td>
+    </tr>
+   <%end%>
+   </table>
+FIM DO TESTE
+<h1>Variable @nutrients=</h1>
+<h1><%@nutrients%></h1>
+[:sr]

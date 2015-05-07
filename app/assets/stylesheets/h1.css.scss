@@ -1,0 +1,53 @@
+h1{
+    float:left;
+    width:830px;
+    padding: 10px 0px 0px;
+}
+#h1-receita{
+    font-family: 'Pacifico', cursive;
+    font-size: 30pt;
+    font-style: italic;
+    font-weight: 200;
+    transform: rotate(-30deg);
+    display:inline;
+    float:left;
+    margin-top: 20px;
+}
+#h1-titulo{
+    font-size: 25pt;
+    border-bottom: 2px #A30000;
+    border-bottom-style: dotted;
+    margin-top: 60px;
+    display:inline;
+    width:700px;
+    float:right;
+}
+#content{
+    float:left;
+    width:830px;
+    margin:0 0 10px;
+}
+#content-procedimento{
+    float:right;
+    width:525px;
+}
+#content-ingredientes{
+    float:left;
+    width:200px;
+}
+#content-serves{
+    float:left;
+    width:830px;
+}
+#table-serves{
+    top: 200px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table, td, tr{
+        border: 1px #A30000;
+        border-style:dotted solid;
+    }
+}
+h3{
+    font-size: 17pt;
+}

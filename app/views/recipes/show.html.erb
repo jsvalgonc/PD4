@@ -1,55 +1,68 @@
+<html>
 <p id="notice"><%= notice %></p>
-    <%= @recipe.title %>
-  <table>
-  <tr>
-    <td>
-    Tempo de Preparação
-    </td>
-    <td>
-    Tempo de Cozedura
-    </td>
-    <td>
-    Ingredientes para 
-
-    </td>
-  </tr>
-  <tr>
-    <td><%= @recipe.preparationTime %></td>
-    <td> <%= @recipe.cookingTime %></td>
-    <td><%= @recipe.serves %>pessoas</td>
-  </tr>
+<head>
+<title>Receita</title>
+</head>
+<body> 
+  <div id="page">
+  <div id="page2">
+  <div id="header">
+    <%= image_tag("logo.jpg", :class => "logo")%>
+    <div id="header-title">PD4</div>
+  </div>
+  <ul id="nav">
+    <li><%= link_to 'Receitas', recipes_path %></li>
+    <li><%= link_to 'Ingredientes', recipes_path %></li>
+    <li><%= link_to 'Unidades de Medida', recipes_path %></li>
+    <li><%= link_to 'Planeamento', recipes_path %></li>
+  </ul>
   
-</table>
-
-<table>
-  <tr>
-    <th>Ingrediente</th>
-    <th>Quantidade</th>
-    <th></th>
-  </tr>
-   <% @recipe.recipe_ingredients.each do |ff| %>
-    <tr>
-    <td>
-    <div>
-      <%= ff.ingredient.description %>
+  <h1>
+    <div id="h1-receita">Receita</div>
+    <div id="h1-titulo"><%= @recipe.title %></div>
+  </h1>
+  <p></p>
+  <div id="content">
+    <div id="content-serves">
+      <table id="table-serves">
+        <tr>
+          <td>
+            Tempo de Preparação
+          </td>
+          <td>
+            Tempo de Cozedura
+          </td>
+          <td>
+            Ingredientes para 
+          </td>
+        </tr>
+        <tr>
+          <td><%= @recipe.preparationTime %> minutos</td>
+          <td><%= @recipe.cookingTime %> minutos</td>
+          <td><%= @recipe.serves %> pessoas</td>
+        </tr>
+      </table>
     </div>
-    </td>
-    <td>
-    <div>
-      <%= ff.amout %>
+    <div id="content-procedimento">
+      <h3>Procedimento</h3>
+      <div class="boxed">
+        <%= simple_format(@recipe.procedure) %>
+      </div>
     </div>
-    </td>
-    <td>
-    <div>
-      <%= ff.ingredient.measurement_unit_id %>
+    <div id="content-ingredientes">
+      <h3>Ingredientes</h3>
+        <% @recipe.recipe_ingredients.each do |ff| %>
+      <ul>
+        <li>
+          <%= ff.ingredient.description %>
+          -<%= ff.amout %>
+          -<%= ff.ingredient.measurement_unit.Unit %>
+          </li>
+        <% end %>
+      </ul>
     </div>
-    </td>
-    </tr>
-  <% end %>
-</table>
-
-<%= @recipe.procedure %>
-
-
-<%= link_to 'Editar', edit_recipe_path(@recipe) %> |
-<%= link_to 'Voltar', recipes_path %>
+  </div>
+  </div>
+  </div>
+</body>
+</html>

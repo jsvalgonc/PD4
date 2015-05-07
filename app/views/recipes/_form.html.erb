@@ -1,3 +1,4 @@
+
 <%= form_for(@recipe) do |f| %>
 
   <% if @recipe.errors.any? %>
@@ -11,6 +12,8 @@
       </ul>
     </div>
   <% end %>
+  <br>
+  <br>
   <div class="field">
     <%= f.text_field :title %>
   </div>
@@ -38,7 +41,7 @@
   </tr>
 </table>
 <table>
-<tr><td>Ingrediente</td><td>Quantidade</td></tr>
+<tr><td>Ingrediente</td><td>Quantidade</td></tr><td> </td>
    <%= f.fields_for(:recipe_ingredients) do |ff| %>  
     <tr><td>
     
@@ -49,6 +52,9 @@
     </td>
     <td>
       <%= ff.text_field :amout %>
+    </td>
+    <td>
+    <%= ff.label :_destroy, "Remover Ingrediente" %> 
     </td>
     </tr>
   <% end %>

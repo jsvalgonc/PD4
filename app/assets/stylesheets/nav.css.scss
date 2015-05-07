@@ -1,0 +1,29 @@
+#nav{
+    background: #cd853f;
+    float:left;
+    width:830px;
+    margin:0;
+    padding:0;
+    border-bottom: 2px solid #0;
+}
+#nav li{
+    background:none;
+    padding:0;
+    display:inline;
+    font-color:black;
+    font-size:10px;
+}
+#nav li a, #nav li strong{
+    float:left;
+    width:auto;
+    padding: 5px 9px 3px;
+    border-left:1px solid #808080;
+    border-right:1px solid #404040;
+    color:black;
+    text-transform:uppercase;
+    text-decoration:none;
+    font-color:black;
+}
+#nav li a:hover{
+background: #B08861; 
+} 

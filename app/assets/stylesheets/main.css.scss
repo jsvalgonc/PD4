@@ -1,0 +1,30 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans+Condensed:);
+@import url(////fonts.googleapis.com/css?family=EB+Garamond:);
+@import url(////fonts.googleapis.com/css?family=Pacifico:);
+body{
+    background:#CCCCCC;
+    margin:0;
+    padding:10px;
+    font-family: 'EB Garamond';
+}
+ul, li{
+    list-style:none;
+}
+h1,h2,h2,ul,li,form{
+    margin:0;
+    padding:0;
+}
+#page{
+    width:854px;
+    margin:0 auto;
+}
+
+#page2{
+    background:#eecfa1;
+    //background-image: url(old_paper_background_hd_picture_2_169574.jpg);
+    width:830px;
+    float:left;
+    padding:10px;
+    border: solid #444;
+    border-width: 1px 3px 3px 1px;
+}

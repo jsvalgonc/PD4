@@ -19,6 +19,10 @@ Workspace::Application.routes.draw do
   
   root 'welcome#index'
   get "welcome/index" => 'welcome#index'
+
+  #teste de API 
+  resources :teste
+
 end
   
   # root :to => 'welcome#index'
