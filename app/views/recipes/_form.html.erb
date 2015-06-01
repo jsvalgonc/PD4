@@ -1,6 +1,23 @@
 
 <%= form_for(@recipe) do |f| %>
-
+  <div id="page">
+  <div id="page2">
+  <div id="header">
+    <%= image_tag("logo.jpg", :class => "logo")%>
+    <div id="header-title">PD4</div>
+  </div>
+  <ul id="nav">
+    <li><%= link_to 'Receitas', recipes_path %></li>
+    <li><%= link_to 'Ingredientes', recipes_path %></li>
+    <li><%= link_to 'Unidades de Medida', recipes_path %></li>
+    <li><%= link_to 'Planeamento', recipes_path %></li>
+  </ul>
+  <h1>
+    <div id="h1-receita">Receita</div>
+    <div id="h1-titulo" class="field">
+    <%= f.text_field :title %></div>
+  </h1>
+  <p></p>
   <% if @recipe.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@recipe.errors.count, "error") %> prohibited this recipe from being saved:</h2>
@@ -14,9 +31,33 @@
   <% end %>
   <br>
   <br>
-  <div class="field">
-    <%= f.text_field :title %>
-  </div>
+
+
+  <div id="content">
+    <div id="content-serves">
+      <table id="table-serves">
+        <tr>
+          <td>
+            Tempo de Preparação
+          </td>
+          <td>
+            Tempo de Cozedura
+          </td>
+          <td>
+            Ingredientes para 
+          </td>
+        </tr>
+        <tr>
+          <td><%= f.text_field :preparationTime %> minutos</td>
+          <td><%= f.text_field :cookingTime %> minutos</td>
+          <td><%= f.text_field :serves %> pessoas</td>
+        </tr>
+      </table>
+    </div>
+</div>
+
+
+
   <table>
   <tr>
     <td>
@@ -42,29 +83,24 @@
 </table>
 <table>
 <tr><td>Ingrediente</td><td>Quantidade</td></tr><td> </td>
-   <%= f.fields_for(:recipe_ingredients) do |ff| %>  
-    <tr><td>
-    
-      <div class="field">
-        <%= ff.select :ingredient_id, Ingredient.find(:all , :order => "description").collect {|s|
-          [(s.description), s.id]} %>
-      </div>
-    </td>
-    <td>
-      <%= ff.text_field :amout %>
-    </td>
-    <td>
-    <%= ff.label :_destroy, "Remover Ingrediente" %> 
-    </td>
-    </tr>
+   <%= f.fields_for(:recipe_ingredients) do |builder| %>  
+    <%= render 'recipe_ingredients', :f => builder %> 
   <% end %>
 </table>
-  <div class="field">
+
+<div class="fields">  
+<%=  link_to_add_fields2 "Adiciona ingredientes", f, :recipe_ingredients %></p>
+</div>
+
+<div class="field">
     <%= f.label 'Procedimento' %><br>
     <%= f.text_area :procedure, cols: 40, rows: 15 %>
   </div>
-  
   <div class="actions">
     <%= f.submit %>
   </div>
+  </div>
+  </div>
+
 <% end %>
+

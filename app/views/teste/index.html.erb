@@ -2,13 +2,26 @@ TESTE
   <table width=100%">
     <%@nutrients.each do |u|%>
     <tr>
-      <td><%=u%> * </td>
-      <td><%=u[1][:foods][0][:nutrients][0][:value]%> x</td>
-      <td> XXXX <%=@tipo%> XXXX </td>
+      <td>Calorias = <%=u[1][:foods][0][:nutrients][0][:value]%> </td>
+    </tr>
+    <tr>
+      <td> Name=  <%=u[1][:foods][0][:name]%></td>
     </tr>
    <%end%>
    </table>
-FIM DO TESTE
+Tabela 2
+<p>
+<p>
+<p>
+  <table width=100%">
+    <%@nutrients.each do |u|%>
+    <tr>
+      <td><%=u%> * </td>
+      <td>Calorias = <%=u[1][:foods][0][:nutrients][0][:value]%> </td>
+      <td> Tipo=  <%=@tipo%></td>
+    </tr>
+   <%end%>
+   </table>
+
 <h1>Variable @nutrients=</h1>
-<h1><%@nutrients%></h1>
-[:sr]
+<h1><%=@nutrients%></h1>

@@ -29,6 +29,9 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'rest-client'
 
+gem 'byebug'
+
+
 group :development, :test do
   gem "rspec-rails"
   gem 'cucumber-rails', :require => false

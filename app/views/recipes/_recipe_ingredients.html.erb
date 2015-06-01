@@ -1,0 +1,17 @@
+<tr><td>
+  <div class="field">
+    <%= f.select :ingredient_id, Ingredient.find(:all , :order => "description").collect {|s|
+      [(s.description), s.id]} %>
+  </div>
+</td>
+<td>
+  <%= f.text_field :amout %>
+</td>
+<td>
+<%= f.check_box :_destroy %> 
+  apagar
+</td>
+</tr>
+
+
+
