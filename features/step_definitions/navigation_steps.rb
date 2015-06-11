@@ -21,8 +21,10 @@ When /^I press "([^\"]*)"$/ do |button|
 end
 
 When /^I click "([^\"]*)"$/ do |link|
+  byebug
   click_link(link)
 end
+
 
 When /^I fill in "([^\"]*)" with "([^\"]*)"$/ do |field, value|
   fill_in(field.gsub(' ', '_'), :with => value)
@@ -39,7 +41,8 @@ When /^I fill in the following:$/ do |fields|
 end
 
 When /^I select "([^\"]*)" from "([^\"]*)"$/ do |value, field|
-  select(value, :from => field)
+  byebug
+  page.select value, :from => field  
 end
 
 When /^I check "([^\"]*)"$/ do |field|

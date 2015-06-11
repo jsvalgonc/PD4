@@ -1,10 +1,26 @@
-<h1>Receitas</h1>
+<html>
+<p id="notice"><%= notice %></p>
+<head>
+<title>Receitas</title>
+</head>
+<body> 
+  <div id="page">
+  <div id="page2">
+  <div id="header">
+    <%= image_tag("logo.jpg", :class => "logo")%>
+    <div id="header-title">PD4</div>
+  </div>
+  <%= render "shared/pd4menu" %>
+  <h1>
+    <div id="h1-receita">Receitas</div>
+  </h1>
+  <p></p>
 <br>
 <br>
 <table>
   <thead>
     <tr>
-      <th>Receita</th>
+      <th> </th>
     </tr>
   </thead>
   <tbody>
@@ -22,3 +38,8 @@
 <br>
 
 <%= link_to 'Nova Receita', new_recipe_path %>
+  </div>
+  </div>
+  </div>
+</body>
+</html>

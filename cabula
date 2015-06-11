@@ -111,7 +111,8 @@ debugger
 n(ext) (or step) to move forward to the next line
 c(ont) to leave the debugger and let the program continue
 q(uit) to leave the debugger and shut down Rails
-
+    Capybara
+       save_and_open_page - abre a página html
 
 
 	

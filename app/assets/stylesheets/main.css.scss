@@ -28,3 +28,22 @@ h1,h2,h2,ul,li,form{
     border: solid #444;
     border-width: 1px 3px 3px 1px;
 }
+#containerWelcome {
+  height: 774px;
+  width: 518px;
+  position: relative;
+}
+#imageWelcome {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#textWelcome {
+  z-index: 100;
+  position: absolute;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  left: 250px;
+  top: 250px;
+}

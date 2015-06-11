@@ -1,6 +1,25 @@
-<h1>Unidades de Medida</h1>
+<title>Unidades de Medida</title>
 <br>
 <br>
+<br>
+<body> 
+  <div id="page">
+  <div id="page2">
+  <div id="header">
+    <%= image_tag("logo.jpg", :class => "logo")%>
+    <div id="header-title">PD4</div>
+  </div>
+  <ul id="nav">
+    <li><%= link_to 'Receitas', recipes_path %></li>
+    <li><%= link_to 'Ingredientes', recipes_path %></li>
+    <li><%= link_to 'Unidades de Medida', recipes_path %></li>
+    <li><%= link_to 'Planeamento', recipes_path %></li>
+  </ul>
+  <h1>
+    <div id="h1">Unidades de Medida</div>
+  </h1>  
+  <p></p><p></p><p></p>
+
 <table>
   <thead>
     <tr>
@@ -25,3 +44,7 @@
 </table>
 <br>
 <%= link_to 'Nova Unidade de Medida', new_measurement_unit_path %>
+  </div>
+  </div>
+</body>
+

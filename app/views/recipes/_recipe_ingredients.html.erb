@@ -1,6 +1,6 @@
 <tr><td>
   <div class="field">
-    <%= f.select :ingredient_id, Ingredient.find(:all , :order => "description").collect {|s|
+    <%= f.select :ingredient_id, Ingredient.order(:description).collect {|s|
       [(s.description), s.id]} %>
   </div>
 </td>

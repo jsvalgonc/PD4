@@ -1,4 +1,18 @@
 <%= form_for(@measurement_unit) do |f| %>
+<body> 
+  <div id="page">
+  <div id="page2">
+  <div id="header">
+    <%= image_tag("logo.jpg", :class => "logo")%>
+    <div id="header-title">PD4</div>
+  </div>
+  <ul id="nav">
+    <li><%= link_to 'Receitas', recipes_path %></li>
+    <li><%= link_to 'Ingredientes', recipes_path %></li>
+    <li><%= link_to 'Unidades de Medida', recipes_path %></li>
+    <li><%= link_to 'Planeamento', recipes_path %></li>
+  </ul>
+  <p></p><p></p><p></p>
   <% if @measurement_unit.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@measurement_unit.errors.count, "error") %> prohibited this measurement_unit from being saved:</h2>
@@ -24,4 +38,8 @@
   <div class="actions">
     <%= f.submit%>
   </div>
+  
+  </div>
+  </div>
+</body>  
 <% end %>

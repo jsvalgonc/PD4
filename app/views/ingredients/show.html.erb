@@ -1,5 +1,19 @@
 <p id="notice"><%= notice %></p>
 
+<head>
+<title>Ingrediente</title>
+</head>
+<body> 
+  <div id="page">
+  <div id="page2">
+  <div id="header">
+    <%= image_tag("logo.jpg", :class => "logo")%>
+    <div id="header-title">Ingrediente</div>
+  </div>
+  <%= render "shared/pd4menu" %>
+  <p></p>
+  <div id="content">
+    <div id="content-serves">
 <p>
   <strong>Description:</strong>
   <%= @ingredient.description %>
@@ -9,7 +23,12 @@
   <strong>Measurement unit:</strong>
   <%= @ingredient.measurement_unit_id %>
 </p>
-
-<%= link_to 'Edit', edit_ingredient_path(@ingredient) %> |
+<%= link_to 'Edit', edit_ingredient_path(@ingredient) %> 
+  </div>
+  </div>
+  </div>
+  </div>
+</body>
+</html>
 
 

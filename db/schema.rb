@@ -13,17 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20150412161358) do
 
-  create_table "answers", force: true do |t|
-    t.integer  "question_id"
-    t.integer  "participant_id"
-    t.text     "content"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "answers", ["participant_id"], name: "index_answers_on_participant_id"
-  add_index "answers", ["question_id"], name: "index_answers_on_question_id"
-
   create_table "ingredients", force: true do |t|
     t.string   "description",         limit: nil
     t.datetime "created_at"
@@ -37,15 +26,6 @@ ActiveRecord::Schema.define(version: 20150412161358) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  create_table "questions", force: true do |t|
-    t.text     "content"
-    t.integer  "survey_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "questions", ["survey_id"], name: "index_questions_on_survey_id"
 
   create_table "receita", force: true do |t|
     t.string   "descricao"
@@ -71,12 +51,6 @@ ActiveRecord::Schema.define(version: 20150412161358) do
     t.decimal  "preparationTime"
     t.decimal  "cookingTime"
     t.decimal  "serves"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "surveys", force: true do |t|
-    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

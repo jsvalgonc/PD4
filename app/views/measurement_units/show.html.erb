@@ -1,5 +1,19 @@
 <p id="notice"><%= notice %></p>
 
+<body> 
+  <div id="page">
+  <div id="page2">
+  <div id="header">
+    <%= image_tag("logo.jpg", :class => "logo")%>
+    <div id="header-title">PD4</div>
+  </div>
+  <ul id="nav">
+    <li><%= link_to 'Receitas', recipes_path %></li>
+    <li><%= link_to 'Ingredientes', recipes_path %></li>
+    <li><%= link_to 'Unidades de Medida', recipes_path %></li>
+    <li><%= link_to 'Planeamento', recipes_path %></li>
+  </ul>
+  <p></p><p></p><p></p>
 <p>
   <strong>Unidade de Medida:</strong>
   <%= @measurement_unit.Unit %>
@@ -12,3 +26,7 @@
 
 <%= link_to 'Editar', edit_measurement_unit_path(@measurement_unit) %> |
 <%= link_to 'Retroceder', measurement_units_path %>
+  
+  </div>
+  </div>
+</body>  

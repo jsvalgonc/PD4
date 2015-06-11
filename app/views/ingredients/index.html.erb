@@ -1,7 +1,24 @@
-<h1>Ingredientes</h1>
+<title>Ingredientes</title>
 <br>
 <br>
 <br>
+<body> 
+  <div id="page">
+  <div id="page2">
+  <div id="header">
+    <%= image_tag("logo.jpg", :class => "logo")%>
+    <div id="header-title">PD4</div>
+  </div>
+  <ul id="nav">
+    <li><%= link_to 'Receitas', recipes_path %></li>
+    <li><%= link_to 'Ingredientes', recipes_path %></li>
+    <li><%= link_to 'Unidades de Medida', recipes_path %></li>
+    <li><%= link_to 'Planeamento', recipes_path %></li>
+  </ul>
+  <h1>
+    <div id="h1-receita">Ingredientes</div>
+  </h1>  
+  <p></p><p></p><p></p>
 <table>
   <thead>
     <tr>
@@ -29,3 +46,5 @@
 <%-# link_to 'Novo Ingrediente', new_measurement_unit_ingredient_path(@measurement_unit) -%>
 
 <%= link_to 'Novo Ingrediente', new_ingredient_path%>
+  </div>
+  </div>

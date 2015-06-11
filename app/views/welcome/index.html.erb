@@ -1,9 +1,15 @@
-<h1>Welcome</h1>
 <p></p>
-<br>
-<p>
-<%= link_to 'Unidades de Medida', measurement_units_path %>  |
-<%= link_to 'Ingredientes', ingredients_path %>  |
-<%= link_to 'Novo Ingrediente', new_ingredient_path %> |
-<%= link_to 'Receitas', recipes_path %>
-</p>
+<div id="page">
+    <div id="page2">
+        <br>
+        <div id="containerWelcome">
+               <%= image_tag("cesto.jpg", width: "774", height: "518", id: "imageWelcome")%> 
+          <p id="textWelcome">
+            Bemvindo ao PD4!
+          </p>
+        </div>
+        </div>
+        <%= link_to 'Receitas', recipes_path %> |
+        <%= link_to 'Ingredientes', ingredients_path %>  |
+        <%= link_to 'Unidades de Medida', measurement_units_path %>  
+</div>
