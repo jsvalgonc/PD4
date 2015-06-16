@@ -1,10 +1,10 @@
-<%= form_for([@measurement_unit,@ingredient]) do |f| %>
   <div id="page">
   <div id="page2">
   <div id="header">
     <%= image_tag("logo.jpg", :class => "logo")%>
     <div id="header-title">PD4</div>
   </div>
+<%= form_for([@measurement_unit,@ingredient]) do |f| %>
   <ul id="nav">
     <li><%= link_to 'Receitas', recipes_path %></li>
     <li><%= link_to 'Ingredientes', recipes_path %></li>
@@ -32,9 +32,20 @@
       <%= f.label "Unidade de Medida" %><br>
       <%= f.collection_select :measurement_unit_id, MeasurementUnit.order(:Unit),:id,:Unit, include_blank: true %>
      </div>
+         <div class="field">
+    <%= f.label "NDB No" %><br>
+    <%= f.text_field :NDB_No %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
-  </div>
-  </div>
+  <p></p>
 <% end %>
+  <h4>Importar Nutrientes</h4>
+    <%= form_tag import_nutrients_ingredients_path do %>
+    <%= submit_tag "Importar" %>
+    <%= hidden_field_tag(:ingredient_id, @ingredient.id) %>
+  <% end %>
+  </div>
+  </div>
+

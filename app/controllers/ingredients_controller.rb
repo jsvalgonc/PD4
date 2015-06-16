@@ -75,6 +75,13 @@ class IngredientsController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  def import_nutrients
+    IngredientsNutrient.importUSDA(params[:ingredient_id])
+    #IngredientsNutrient.import("1")
+    redirect_to root_url, notice: "Nutrientes Importados"
+  end
+  
 
   private
     # Use callbacks to share common setup or constraints between actions.
@@ -88,6 +95,6 @@ class IngredientsController < ApplicationController
     end
     
     def ingredient_params
-      params.require(:ingredient).permit(:measurement_unit_id, :description)
+      params.require(:ingredient).permit(:measurement_unit_id, :description, :NDB_No)
     end
 end

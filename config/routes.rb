@@ -1,5 +1,9 @@
 Workspace::Application.routes.draw do
   
+  resources :ingredients_nutrients
+
+  resources :nutrients
+
   resources :participants
 
   resources :recipes do
@@ -22,6 +26,16 @@ Workspace::Application.routes.draw do
 
   #teste de API 
   resources :teste
+  
+  #importacao de ficheiro
+  resources :nutrients do
+    collection { post :import }
+  end
+  
+  #importação dos nutrientes de um ingrediente
+  resources :ingredients do
+    collection { post :import_nutrients }
+  end
 
 end
   

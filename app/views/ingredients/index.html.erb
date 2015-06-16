@@ -24,6 +24,7 @@
     <tr>
       <th>Ingrediente</th>
       <th>Unidade</th>
+      <th>NDB_No</th>
       <th></th>
       <th></th>
       <th></th>
@@ -34,6 +35,7 @@
       <tr>
         <td><%= ingredient.description %></td>
         <td><%= MeasurementUnit.find_by_id(ingredient.measurement_unit_id).Unit %></td>
+        <td><%= ingredient.NDB_No %></td>
         <td><%= link_to 'Mostrar', ingredient%></td>
         <td><%= link_to 'Editar', edit_ingredient_path(ingredient)%></td>
         <td><%= link_to 'Apagar', ingredient, method: :delete, data: { confirm: 'Tem a certeza?' } %></td>

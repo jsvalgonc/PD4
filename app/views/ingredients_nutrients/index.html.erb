@@ -1,0 +1,31 @@
+<h1>Listing ingredients_nutrients</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ingredient</th>
+      <th>Nutrient</th>
+      <th>Valor</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ingredients_nutrients.each do |ingredients_nutrient| %>
+      <tr>
+        <td><%= ingredients_nutrient.ingredient %></td>
+        <td><%= ingredients_nutrient.nutrient %></td>
+        <td><%= ingredients_nutrient.valor %></td>
+        <td><%= link_to 'Show', ingredients_nutrient %></td>
+        <td><%= link_to 'Edit', edit_ingredients_nutrient_path(ingredients_nutrient) %></td>
+        <td><%= link_to 'Destroy', ingredients_nutrient, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ingredients nutrient', new_ingredients_nutrient_path %>

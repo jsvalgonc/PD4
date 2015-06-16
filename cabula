@@ -43,9 +43,9 @@ Apagar: rails destroy scaffold products
 gera um ficheiro no directorio db
 
 Actualizar Tabela (ou qualquer coisa na base de dados)
-rake db:migrate
+bundle exec rake db:migrate 
 
-Acrescentar um campo : rails generate migration AddReceitumIdToReceitaIngredientes  receitum_id:integer –force
+Acrescentar um campo : rails generate migration AddReceitumIdToReceitaIngredientes  receitum_id:integer 
 
 Criar uma tabela de ligação: Rails generate scaffold IngredientsRecipes recipe:references ingredient:references
 

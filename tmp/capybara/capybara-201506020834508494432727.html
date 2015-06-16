@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Workspace</title>
+  <link data-turbolinks-track="true" href="/assets/application.css" media="all" rel="stylesheet" />
+  <script data-turbolinks-track="true" src="/assets/application.js"></script>
+  
+</head>
+<body>
+
+<h1>Nova Receita</h1>
+
+
+<form accept-charset="UTF-8" action="/recipes" class="new_recipe" id="new_recipe" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <div id="page">
+  <div id="page2">
+  <div id="header">
+    <img alt="Logo" class="logo" src="/assets/logo.jpg" />
+    <div id="header-title">PD4</div>
+  </div>
+  <ul id="nav">
+    <li><a href="/recipes">Receitas</a></li>
+    <li><a href="/recipes">Ingredientes</a></li>
+    <li><a href="/recipes">Unidades de Medida</a></li>
+    <li><a href="/recipes">Planeamento</a></li>
+  </ul>
+  <h1>
+    <div id="h1-receita">Receita</div>
+    <div id="h1-titulo" class="field">
+    <input id="recipe_title" name="recipe[title]" type="text" /></div>
+  </h1>
+  <p></p>
+  <br>
+  <br>
+
+
+  <div id="content">
+    <div id="content-serves">
+      <table id="table-serves">
+        <tr>
+          <td>
+            Tempo de Preparação
+          </td>
+          <td>
+            Tempo de Cozedura
+          </td>
+          <td>
+            Ingredientes para 
+          </td>
+        </tr>
+        <tr>
+          <td><input id="recipe_preparationTime" name="recipe[preparationTime]" type="text" /> minutos</td>
+          <td><input id="recipe_cookingTime" name="recipe[cookingTime]" type="text" /> minutos</td>
+          <td><input id="recipe_serves" name="recipe[serves]" type="text" /> pessoas</td>
+        </tr>
+      </table>
+    </div>
+</div>
+
+
+
+  <table>
+  <tr>
+    <td>
+  <div class="field">
+    <label for="recipe_Tempo de Preparação">Tempo de preparação</label><br>
+    <input id="recipe_preparationTime" name="recipe[preparationTime]" type="text" />
+  </div>      
+    </td>
+    <td>
+   <div class="field">
+    <label for="recipe_Tempo de Cozedura">Tempo de cozedura</label><br>
+    <input id="recipe_cookingTime" name="recipe[cookingTime]" type="text" />
+  </div>     
+    </td>
+    <td>
+   <div class="field">
+    <label for="recipe_Ingredientes para ">Ingredientes para </label><br>
+    <input id="recipe_serves" name="recipe[serves]" type="text" />
+    pessoas
+  </div>
+    </td>
+  </tr>
+</table>
+<table>
+<tr><td>Ingrediente</td><td>Quantidade</td></tr><td> </td>
+     
+    <tr><td>
+  <div class="field">
+    <select id="recipe_recipe_ingredients_attributes_0_ingredient_id" name="recipe[recipe_ingredients_attributes][0][ingredient_id]"></select>
+  </div>
+</td>
+<td>
+  <input id="recipe_recipe_ingredients_attributes_0_amout" name="recipe[recipe_ingredients_attributes][0][amout]" type="text" />
+</td>
+<td>
+<input name="recipe[recipe_ingredients_attributes][0][_destroy]" type="hidden" value="0" /><input id="recipe_recipe_ingredients_attributes_0__destroy" name="recipe[recipe_ingredients_attributes][0][_destroy]" type="checkbox" value="1" /> 
+  apagar
+</td>
+</tr>
+
+
+
+ 
+  
+    <tr><td>
+  <div class="field">
+    <select id="recipe_recipe_ingredients_attributes_1_ingredient_id" name="recipe[recipe_ingredients_attributes][1][ingredient_id]"></select>
+  </div>
+</td>
+<td>
+  <input id="recipe_recipe_ingredients_attributes_1_amout" name="recipe[recipe_ingredients_attributes][1][amout]" type="text" />
+</td>
+<td>
+<input name="recipe[recipe_ingredients_attributes][1][_destroy]" type="hidden" value="0" /><input id="recipe_recipe_ingredients_attributes_1__destroy" name="recipe[recipe_ingredients_attributes][1][_destroy]" type="checkbox" value="1" /> 
+  apagar
+</td>
+</tr>
+
+
+
+ 
+  
+    <tr><td>
+  <div class="field">
+    <select id="recipe_recipe_ingredients_attributes_2_ingredient_id" name="recipe[recipe_ingredients_attributes][2][ingredient_id]"></select>
+  </div>
+</td>
+<td>
+  <input id="recipe_recipe_ingredients_attributes_2_amout" name="recipe[recipe_ingredients_attributes][2][amout]" type="text" />
+</td>
+<td>
+<input name="recipe[recipe_ingredients_attributes][2][_destroy]" type="hidden" value="0" /><input id="recipe_recipe_ingredients_attributes_2__destroy" name="recipe[recipe_ingredients_attributes][2][_destroy]" type="checkbox" value="1" /> 
+  apagar
+</td>
+</tr>
+
+
+
+ 
+</table>
+
+<div class="fields">  
+<a association="recipe_ingredients" fields="{&lt;tr&gt;&lt;td&gt;
+  &lt;div class=&quot;field&quot;&gt;
+    &lt;select id=&quot;recipe_recipe_ingredients_attributes_new_recipe_ingredients_ingredient_id&quot; name=&quot;recipe[recipe_ingredients_attributes][new_recipe_ingredients][ingredient_id]&quot;&gt;&lt;/select&gt;
+  &lt;/div&gt;
+&lt;/td&gt;
+&lt;td&gt;
+  &lt;input id=&quot;recipe_recipe_ingredients_attributes_new_recipe_ingredients_amout&quot; name=&quot;recipe[recipe_ingredients_attributes][new_recipe_ingredients][amout]&quot; type=&quot;text&quot; /&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;input name=&quot;recipe[recipe_ingredients_attributes][new_recipe_ingredients][_destroy]&quot; type=&quot;hidden&quot; value=&quot;0&quot; /&gt;&lt;input id=&quot;recipe_recipe_ingredients_attributes_new_recipe_ingredients__destroy&quot; name=&quot;recipe[recipe_ingredients_attributes][new_recipe_ingredients][_destroy]&quot; type=&quot;checkbox&quot; value=&quot;1&quot; /&gt; 
+  apagar
+&lt;/td&gt;
+&lt;/tr&gt;
+
+
+
+}" href="javascript:void();" id="add_fields2" link="this">Adiciona ingredientes</a></p>
+</div>
+
+<div class="field">
+    <label for="recipe_Procedimento">Procedimento</label><br>
+    <textarea cols="40" id="recipe_procedure" name="recipe[procedure]" rows="15">
+</textarea>
+  </div>
+  <div class="actions">
+    <input name="commit" type="submit" value="Criar" />
+  </div>
+  </div>
+  </div>
+
+</form>
+
+<a href="/recipes">Voltar</a>
+
+
+</body>
+</html>

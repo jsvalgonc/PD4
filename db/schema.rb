@@ -11,20 +11,44 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150412161358) do
+ActiveRecord::Schema.define(version: 20150613221942) do
 
   create_table "ingredients", force: true do |t|
     t.string   "description",         limit: nil
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "measurement_unit_id"
+    t.integer  "NDB_No"
   end
+
+  create_table "ingredients_nutrients", force: true do |t|
+    t.integer  "ingredient_id"
+    t.integer  "nutrient_id"
+    t.decimal  "valor"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "ingredients_nutrients", ["ingredient_id"], name: "index_ingredients_nutrients_on_ingredient_id"
+  add_index "ingredients_nutrients", ["nutrient_id"], name: "index_ingredients_nutrients_on_nutrient_id"
 
   create_table "measurement_units", force: true do |t|
     t.string   "Unit"
     t.string   "Symbol"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "nutrients", force: true do |t|
+    t.string   "nutrno"
+    t.string   "units"
+    t.string   "tagname"
+    t.string   "nutrdesc"
+    t.decimal  "numdec"
+    t.decimal  "srorder"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.boolean  "activo"
   end
 
   create_table "receita", force: true do |t|
