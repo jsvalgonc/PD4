@@ -6,20 +6,15 @@ Workspace::Application.routes.draw do
 
   resources :participants
 
+  resources :measurement_units
+
   resources :recipes do
     get 'recipe_ingredients', on: :member
   end
   
-
-  resources :surveys do
-    get 'answers', on: :member
+  resources :ingredients do
+    get 'ingredient_nutrients', on: :member
   end
-    
-  #resources :measurement_units do
-  #  resources :ingredients, shallow: true
-  #end
-  resources :measurement_units
-  resources :ingredients
   
   root 'welcome#index'
   get "welcome/index" => 'welcome#index'

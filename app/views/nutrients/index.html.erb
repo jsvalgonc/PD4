@@ -38,7 +38,6 @@
 
 <%= link_to 'New Nutrient', new_nutrient_path %>
 
-<h2>Importar Nutrientes</h2>
 <%= form_tag import_nutrients_path, multipart: true do %>
   <%= file_field_tag :file %>
   <%= submit_tag "Importar" %>

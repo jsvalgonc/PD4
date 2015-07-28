@@ -6,12 +6,7 @@
     <%= image_tag("logo.jpg", :class => "logo")%>
     <div id="header-title">PD4</div>
   </div>
-  <ul id="nav">
-    <li><%= link_to 'Receitas', recipes_path %></li>
-    <li><%= link_to 'Ingredientes', recipes_path %></li>
-    <li><%= link_to 'Unidades de Medida', recipes_path %></li>
-    <li><%= link_to 'Planeamento', recipes_path %></li>
-  </ul>
+<%= render "shared/pd4menu" %>
   <p></p><p></p><p></p>
   <% if @measurement_unit.errors.any? %>
     <div id="error_explanation">

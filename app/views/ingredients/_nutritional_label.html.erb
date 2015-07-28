@@ -1,0 +1,191 @@
+<section class="performance-facts">
+  <header class="performance-facts__header">
+    <h1 class="performance-facts__title">Informação Nutricional</h1>
+    <p>Serving Size 1/2 cup (about 82g)
+    <p>Serving Per Container 8</p>
+  </header>
+  <table class="performance-facts__table">
+    <thead>
+      <tr>
+        <th colspan="3" class="small-info">
+          Amount Per Serving
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th colspan="2">
+          <b>Calorias</b>
+          <%= @ingredient.ingredients_nutrients.find_by(nutrient_id: 208).valor %>
+        </th>
+        <td>
+        </td>
+      </tr>
+      <tr class="thick-row">
+        <td colspan="3" class="small-info">
+          <b>% do Valor Diário*</b>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2">
+          <b>Gordura Total</b>
+          <%= @ingredient.ingredients_nutrients.find_by(nutrient_id: 204).valor%>g
+        </th>
+        <td>
+          <b>22%</b>
+        </td>
+      </tr>
+      <tr>
+        <td class="blank-cell">
+        </td>
+        <th>
+          Gordura Saturada
+          <%= @ingredient.ingredients_nutrients.find_by(nutrient_id: 606).valor%>g
+        </th>
+        <td>
+          <b>22%</b>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2">
+          <b>Colestrol</b>
+          <%= @ingredient.ingredients_nutrients.find_by(nutrient_id: 601).valor%>mg
+        </th>
+        <td>
+          <b>18%</b>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2">
+          <b>Sódio</b>
+          <%= @ingredient.ingredients_nutrients.find_by(nutrient_id: 307).valor%>mg
+        </th>
+        <td>
+          <b>2%</b>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2">
+          <b>Hidratos de Carbono Totais</b>
+          <%= @ingredient.ingredients_nutrients.find_by(nutrient_id: 205).valor%>g
+        </th>
+        <td>
+          <b>6%</b>
+        </td>
+      </tr>
+      <tr>
+        <td class="blank-cell">
+        </td>
+        <th>
+          Fibra Alimentar
+          <%= @ingredient.ingredients_nutrients.find_by(nutrient_id: 291).valor%>g
+        </th>
+        <td>
+          <b>4%</b>
+        </td>
+      </tr>
+      <tr>
+        <td class="blank-cell">
+        </td>
+        <th>
+          Açucar
+          14g
+        </th>
+        <td>
+        </td>
+      </tr>
+      <tr class="thick-end">
+        <th colspan="2">
+          <b>Proteinas</b>
+          <%= @ingredient.ingredients_nutrients.find_by(nutrient_id: 203).valor%>g
+        </th>
+        <td>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <table class="performance-facts__table--grid">
+    <tbody>
+      <tr>
+        <td colspan="2">
+          Vitamina A
+          10%
+        </td>
+        <td>
+          Vitamina C
+          0%
+        </td>
+      </tr>
+      <tr class="thin-end">
+        <td colspan="2">
+          Cálcio
+          10%
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <p class="small-info">* Percent Daily Values are based on a 2,000 calorie diet. Your daily values may be higher or lower depending on your calorie needs:</p>
+  
+  <table class="performance-facts__table--small small-info">
+    <thead>
+      <tr>
+        <td colspan="2"></td>
+        <th>Calories:</th>
+        <th>2,000</th>
+        <th>2,500</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th colspan="2">Total Fat</th>
+        <td>Less than</td>
+        <td>65g</td>
+        <td>80g</td>
+      </tr>
+      <tr>
+        <td class="blank-cell"></td>
+        <th>Saturated Fat</th>
+        <td>Less than</td>
+        <td>20g</td>
+        <td>25g</td>
+      </tr>
+      <tr>
+        <th colspan="2">Cholesterol</th>
+        <td>Less than</td>
+        <td>300mg</td>
+        <td>300 mg</td>
+      </tr>
+      <tr>
+        <th colspan="2">Sódio</th>
+        <td>Less than</td>
+        <td>2,400mg</td>
+        <td>2,400mg</td>
+      </tr>
+      <tr>
+        <th colspan="3">Total Hidratos de Carbono</th>
+        <td>300g</td>
+        <td>375g</td>
+      </tr>
+      <tr>
+        <td class="blank-cell"></td>
+        <th colspan="2">Fibra Alimentar</th>
+        <td>25g</td>
+        <td>30g</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <p class="small-info">
+    Calorias por grama:
+  </p>
+  <p class="small-info text-center">
+    Gorduras 9
+    &bull;
+    Hidratos de Carbono 4
+    &bull;
+    Proteinas 4
+  </p>
+  
+</section>

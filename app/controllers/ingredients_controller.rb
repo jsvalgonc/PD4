@@ -1,5 +1,5 @@
 class IngredientsController < ApplicationController
-  before_action :set_ingredient, only: [:show, :edit, :update, :destroy]
+  before_action :set_ingredient, only: [:show, :edit, :update, :destroy, :ingredients_nutrients]
   #before_filter :get_measurement_unit
 
   # GET /ingredients
@@ -14,6 +14,7 @@ class IngredientsController < ApplicationController
   def show
     #@ingredients = @measurement_unit.ingredient.find(params[:id])
     #@ingredients = @measurement_unit.ingredient.find(id_params)
+    #byebug
   end
 
   # GET /ingredients/new
@@ -26,6 +27,9 @@ class IngredientsController < ApplicationController
 
   # GET /ingredients/1/edit
   def edit
+
+    @ingredient = Ingredient.find(params[:id])
+    @ingredient.ingredients_nutrients.build
     #@ingredient = @measurement_unit.ingredients.find(params[:id])
     
     # was @award = Award.find(params[:id])
@@ -95,6 +99,7 @@ class IngredientsController < ApplicationController
     end
     
     def ingredient_params
+#      params.require(:ingredient).permit(:measurement_unit_id, :description, :NDB_No, ingredients_nutrients_attributes[:id, :ingredient_id, :nutrient_id, :valor])
       params.require(:ingredient).permit(:measurement_unit_id, :description, :NDB_No)
     end
 end

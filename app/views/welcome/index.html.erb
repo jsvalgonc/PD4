@@ -2,14 +2,22 @@
 <div id="page">
     <div id="page2">
         <br>
-        <div id="containerWelcome">
-               <%= image_tag("cesto.jpg", width: "774", height: "518", id: "imageWelcome")%> 
-          <p id="textWelcome">
-            Bemvindo ao PD4!
-          </p>
+        <table> 
+            <tr>
+                <div id="containerWelcome">
+                   <%= image_tag("cesto.jpg", width: "774", height: "518", id: "imageWelcome")%> 
+                <p id="textWelcome">
+                Bemvindo ao PD4!
+                </p>
+             </tr>
+             <tr> 
+                 <div id="textWelcomeMenu">
+                    <%= link_to 'Receitas', recipes_path %> |
+                    <%= link_to 'Ingredientes', ingredients_path %>  |
+                    <%= link_to 'Unidades de Medida', measurement_units_path %>
+                </div>
+            </tr>
+        </table>
+         </div>
         </div>
-        </div>
-        <%= link_to 'Receitas', recipes_path %> |
-        <%= link_to 'Ingredientes', ingredients_path %>  |
-        <%= link_to 'Unidades de Medida', measurement_units_path %>  
 </div>

@@ -29,7 +29,7 @@ h1,h2,h2,ul,li,form{
     border-width: 1px 3px 3px 1px;
 }
 #containerWelcome {
-  height: 774px;
+  height: 600px;
   width: 518px;
   position: relative;
 }
@@ -42,8 +42,15 @@ h1,h2,h2,ul,li,form{
   z-index: 100;
   position: absolute;
   color: white;
-  font-size: 35px;
+  font-size: 33px;
   font-weight: bold;
   left: 250px;
   top: 250px;
+  font-family: "EB Garamond";
+}
+#textWelcomeMenu {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "EB Garamond";
 }

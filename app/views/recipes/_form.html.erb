@@ -51,31 +51,6 @@
     </div>
 </div>
 
-
-
-  <table>
-  <tr>
-    <td>
-  <div class="field">
-    <%= f.label 'Tempo de Preparação'%><br>
-    <%= f.text_field :preparationTime %>
-  </div>      
-    </td>
-    <td>
-   <div class="field">
-    <%= f.label 'Tempo de Cozedura' %><br>
-    <%= f.text_field :cookingTime %>
-  </div>     
-    </td>
-    <td>
-   <div class="field">
-    <%= f.label "Ingredientes para "%><br>
-    <%= f.text_field :serves %>
-    pessoas
-  </div>
-    </td>
-  </tr>
-</table>
 <table>
 <tr><td>Ingrediente</td><td>Quantidade</td></tr><td> </td>
    <%= f.fields_for(:recipe_ingredients) do |builder| %>  
@@ -91,6 +66,8 @@
     <%= f.label 'Procedimento' %><br>
     <%= f.text_area :procedure, cols: 40, rows: 15 %>
   </div>
+
+  
   <div class="actions">
     <%= f.submit %>
   </div>
