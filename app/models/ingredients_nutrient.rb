@@ -13,7 +13,6 @@ class IngredientsNutrient < ActiveRecord::Base
    #vai buscar todos os nutrients da base dados USDA para este ingrediente
    nDB_NO=Ingredient.where("id=" + ingredient_id).first.NDB_No
    @nutrients=getUSDA(nDB_NO.to_s, @nutrients_array)
-   byebug
    #itera por cada um dos nutrientes e insere na tabela
    @nutrients[:report][:foods][0][:nutrients].each do |row|
     ingnut = IngredientsNutrient.new

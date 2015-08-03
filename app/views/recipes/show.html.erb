@@ -3,13 +3,21 @@
 <head>
 <title>Receita</title>
 </head>
-<body> 
+
+
+<script>
+$(document).ready(function(){
+    $("#show_hide_nutricional_label").click(function(){
+        $("#nutritional_label").toggle();
+    });
+});
+</script>
+<body>
+
+
   <div id="page">
   <div id="page2">
-  <div id="header">
-    <%= image_tag("logo.jpg", :class => "logo")%>
-    <div id="header-title">PD4</div>
-  </div>
+  <%= render "shared/pd4Cabecalho" %>
   <%= render "shared/pd4menu" %>
   <h1>
     <div id="h1-receita">Receita</div>
@@ -21,13 +29,13 @@
       <table id="table-serves">
         <tr>
           <td>
-            Tempo de Preparação
+            <b>Tempo de Preparação</b>
           </td>
           <td>
-            Tempo de Cozedura
+            <b>Tempo de Cozedura</b>
           </td>
           <td>
-            Ingredientes para 
+            <b>Ingredientes para</b> 
           </td>
         </tr>
         <tr>
@@ -38,24 +46,39 @@
       </table>
     </div>
     <div id="content-procedimento">
-      <h3>Procedimento</h3>
-      <div class="boxed">
+      <h3 width="50">Procedimento</h3>
+      <div id="content-procedimento-texto">
         <%= simple_format(@recipe.procedure) %>
       </div>
     </div>
     <div id="content-ingredientes">
-      <h3>Ingredientes</h3>
-        <% @recipe.recipe_ingredients.each do |ff| %>
-      <ul>
-        <li>
-          <%= ff.ingredient.description %>
-          -<%= ff.amout %>
-          -<%= ff.ingredient.measurement_unit.Unit %>
-          </li>
-        <% end %>
+      <h3 width="50">Ingredientes</h3>
+      <table>
+        <tr><td><% @recipe.recipe_ingredients.each do |ff| %></td></tr> 
+        <tr>
+          <td align="right">
+            <%= number_with_precision(ff.amout, precision: 0) %> 
+            <% if ff.amout == 1 -%>
+              <% if ff.amout =! 0 -%>
+                <%= ff.ingredient.measurement_unit.Unit %>
+              <% end %>
+            <% else -%>
+              <%= ff.ingredient.measurement_unit.Unit_plural %> 
+            <% end -%> 
+          </td>
+          <td>
+            <b><%= ff.ingredient.description %></b>
+          </td>
+        </tr>
+        <% end%>
       </ul>
+      </table>
     </div>
   </div>
+
+  <button id="show_hide_nutricional_label">Informação Nutricional</button>
+
+  <%= render 'nutritional_label' %> 
   </div>
   </div>
 </body>

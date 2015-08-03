@@ -10,15 +10,12 @@
     <div id="header-title">PD4</div>
   </div>
   <%= render "shared/pd4menu" %>
-  <h1>
-    <div id="h1">Unidades de Medida</div>
-  </h1>  
-  <p></p><p></p><p></p>
-
+  <h1><div id="h1-entidade">Unidades de Medidas</div></h1>
 <table>
   <thead>
     <tr>
       <th>Unidades</th>
+      <th>Unidades Plural</th>
       <th>Simbolo</th>
       <th></th>
       <th></th>
@@ -29,6 +26,7 @@
     <% @measurement_units.each do |measurement_unit| %>
       <tr>
         <td><%= measurement_unit.Unit %></td>
+        <td><%= measurement_unit.Unit_plural %></td>
         <td><%= measurement_unit.Symbol %></td>
         <td><%= link_to 'Mostrar', measurement_unit %></td>
         <td><%= link_to 'Editar', edit_measurement_unit_path(measurement_unit) %></td>

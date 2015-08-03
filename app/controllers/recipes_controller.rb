@@ -92,18 +92,19 @@ class RecipesController < ApplicationController
       #percorre os ingredientes da receita 
       set_recipe
       #cria uma array para os nutrientes 
+    
       h=Hash.new(0)
       @recipe.recipe_ingredients.each do |recipe_ingredient|
           #para cada ingrediente vai buscar os nutrientes
         recipe_ingredient.ingredient.ingredients_nutrients.map do |recipe_ingredient_nutrient|
           #calcula a porção de cada ingrediente 
+          #byebug
           amout_nutrient = recipe_ingredient.amout * recipe_ingredient_nutrient.valor
           #Se o nutriente já existe na array, acrescenta, se não cria
           if h.has_key?(recipe_ingredient_nutrient.nutrient_id) then
             h[recipe_ingredient_nutrient.nutrient_id] = amout_nutrient
             #cria registo
           else
-            byebug
              h[recipe_ingredient_nutrient.nutrient_id] = h[recipe_ingredient_nutrient.nutrient_id]+amout_nutrient
              #soma 
           end

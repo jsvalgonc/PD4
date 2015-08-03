@@ -11,14 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150630090740) do
+ActiveRecord::Schema.define(version: 20150803081231) do
 
   create_table "ingredients", force: true do |t|
-    t.string   "description",         limit: nil
+    t.string   "description"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "measurement_unit_id"
-    t.integer  "NDB_No"
+    t.text     "NDB_No"
   end
 
   create_table "ingredients_nutrients", force: true do |t|
@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 20150630090740) do
     t.string   "Symbol"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "Unit_plural"
   end
 
   create_table "nutrients", force: true do |t|

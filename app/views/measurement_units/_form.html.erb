@@ -3,8 +3,7 @@
   <div id="page">
   <div id="page2">
   <div id="header">
-    <%= image_tag("logo.jpg", :class => "logo")%>
-    <div id="header-title">PD4</div>
+  <table style="margin:10px;"><tr><%= image_tag("logo.jpg", :class => "logo")%><td></td><td><div id="header-title">PD4</div></td></tr></table>
   </div>
 <%= render "shared/pd4menu" %>
   <p></p><p></p><p></p>
@@ -24,6 +23,10 @@
   <div class="field">
     <%= f.label "Unidade" %><br>
     <%= f.text_field :Unit %>
+  </div>
+    <div class="field">
+    <%= f.label "Unidade Plural" %><br>
+    <%= f.text_field :Unit_plural %>
   </div>
   <br>
   <div class="field">

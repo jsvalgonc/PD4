@@ -1,0 +1,79 @@
+<html>
+<p id="notice"><%= notice %></p>
+<head>
+<title>Receita</title>
+</head>
+
+
+<script>
+$(document).ready(function(){
+    $("#show_hide_nutricional_label").click(function(){
+        $("#nutritional_label").toggle();
+    });
+});
+</script>
+<body>
+
+
+  <div id="page">
+  <div id="page2">
+  <%= render "shared/pd4Cabecalho" %>
+  <%= render "shared/pd4menu" %>
+  <h1>
+    <div id="h1-receita">Receita</div>
+    <div id="h1-titulo"><%= @recipe.title %></div>
+  </h1>
+  <p></p>
+  <div id="content">
+    <div id="content-serves">
+      <table id="table-serves">
+        <tr>
+          <td>
+            <b>Tempo de Preparação</b>
+          </td>
+          <td>
+            <b>Tempo de Cozedura</b>
+          </td>
+          <td>
+            <b>Ingredientes para</b> 
+          </td>
+        </tr>
+        <tr>
+          <td><%= @recipe.preparationTime %> minutos</td>
+          <td><%= @recipe.cookingTime %> minutos</td>
+          <td><%= @recipe.serves %> pessoas</td>
+        </tr>
+      </table>
+    </div>
+    <div id="content-procedimento">
+      <h3 width="50">Procedimento</h3>
+      <div id="content-procedimento-texto">
+        <%= simple_format(@recipe.procedure) %>
+      </div>
+    </div>
+    <div id="content-ingredientes">
+      <h3 width="50">Ingredientes</h3>
+      <table>
+        <tr><td><% @recipe.recipe_ingredients.each do |ff| %></td></tr> 
+        <tr>
+          <td align="right">
+            <%= number_with_precision(ff.amout, precision: 0) %> 
+            <%= ff.ingredient.measurement_unit.Unit %> 
+          </td>
+          <td>
+            <b><%= ff.ingredient.description %></b>
+          </td>
+        </tr>
+        <% end%>
+      </ul>
+      </table>
+    </div>
+  </div>
+
+  <button id="show_hide_nutricional_label">Informação Nutricional</button>
+
+  <%= render 'nutritional_label' %> 
+  </div>
+  </div>
+</body>
+</html>

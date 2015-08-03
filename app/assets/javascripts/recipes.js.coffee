@@ -15,6 +15,11 @@ $ ->
     regexp = new RegExp("new_" + association, "g")
     $(this).parent().before(content.replace(regexp, new_id))
     event.preventDefault()
+    
+$ -> 
+    $("#show_hide_nutricional_label2").on 'click',(event) ->
+        $("#nutritional_label").toggle()
+
 
 
     

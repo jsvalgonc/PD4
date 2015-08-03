@@ -74,6 +74,6 @@ class MeasurementUnitsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def measurement_unit_params
-      params.require(:measurement_unit).permit(:Unit, :Symbol)
+      params.require(:measurement_unit).permit(:Unit, :Unit_plural, :Symbol)
     end
 end

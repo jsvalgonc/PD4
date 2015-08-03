@@ -123,13 +123,13 @@ Receita
 
 Controlo de Erros
       - na importação
+      - no calculo de nutrientes
 
 A desenvolver 
-      - informação nutricional por receita
-      - pop-up como os códigos da ingredientes
       - testes cucumber
 
 Ideias
+      - fotos das receitas
       - planeamento por semana
       - nutrientes por semana - é necessário acrescentar as "não receitas"
       - necessidade alimentares por pessoa

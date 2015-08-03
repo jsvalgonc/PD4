@@ -9,9 +9,20 @@ h1{
     font-style: italic;
     font-weight: 200;
     transform: rotate(-30deg);
-    display:inline;
+    display:block;
     float:left;
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#h1-entidade{
+    font-family: 'Pacifico', cursive;
+    font-size: 20pt;
+    font-style: italic;
+    font-weight: 200;
+    display:block;
+    float:left;
+    margin-top: 25px;
+    margin-bottom: 15px;
 }
 #h1-titulo{
     font-size: 25pt;
@@ -21,6 +32,7 @@ h1{
     display:inline;
     width:700px;
     float:right;
+    padding-bottom: 15px;
 }
 #content{
     float:left;
@@ -46,8 +58,18 @@ h1{
     table, td, tr{
         border: 1px #A30000;
         border-style:dotted solid;
+        padding: 10px;
     }
 }
+#content-procedimento-texto{
+    font-family: 'Times New Roman';
+    font-size: 12px;
+    p{
+        font-family: 'Times New Roman';
+        font-size: 18px;
+        }
+}
+
 h3{
     font-size: 17pt;
 }
