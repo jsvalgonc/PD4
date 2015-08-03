@@ -48,7 +48,24 @@ $(document).ready(function(){
     <div id="content-procedimento">
       <h3 width="50">Procedimento</h3>
       <div id="content-procedimento-texto">
-        <%= simple_format(@recipe.procedure) %>
+      <table>
+        <tr><td><% @recipe.recipe_procedures.each do |ff| %></td></tr> 
+        <tr>
+          <td class="table_procedure_procedure_nunber">
+            <%= ff.procedure_number %>.
+          </td>
+          <td class="table_procedure_title">
+            <%= ff.title %>
+          </td>
+          </tr>
+          <tr>
+          <td> </td>
+          <td  class="table_procedure_procedure">
+            <%= simple_format(ff.procedure) %>
+          </td>
+          <% end %>
+        </tr>
+      </table>
       </div>
     </div>
     <div id="content-ingredientes">

@@ -1,5 +1,5 @@
 class RecipesController < ApplicationController
-  before_action :set_recipe, only: [:show, :edit, :update, :destroy,:recipe_ingredients, :recipe_nutrients ]
+  before_action :set_recipe, only: [:show, :edit, :update, :destroy,:recipe_ingredients, :recipe_nutrients, :recipe_procedures ]
 
   # GET /recipes
   # GET /recipes.json
@@ -15,13 +15,13 @@ class RecipesController < ApplicationController
   # GET /recipes/new
   def new
     @recipe = Recipe.new
-    3.times {@recipe.recipe_ingredients.build}
   end
 
   # GET /recipes/1/edit
   def edit
     @recipe = Recipe.find(params[:id])
     @recipe.recipe_ingredients.build
+    @recipe.recipe_procedures.build
   end
   
   # POST /recipes
@@ -80,7 +80,7 @@ class RecipesController < ApplicationController
     def recipe_params
       params.require(:recipe).permit(:id, :title, :procedure, :preparationTime, :cookingTime, :serves,
         recipe_ingredients_attributes: [:id,:recipe_id, :ingredient_id, :amout, :_destroy ,measurement_units_attributes: [:id, :unit]],
-        recipe_nutrients_attributes: [:id,:recipe_id,:nutrient_id,:valor] )
+        recipe_nutrients_attributes: [:id,:recipe_id,:nutrient_id,:valor], recipe_procedures_attributes: [:id, :recipe_id,:procedure_number, :title, :procedure] )
     end
     
     def calculate_nutrients

@@ -2,10 +2,6 @@
 <%= form_for(@recipe) do |f| %>
   <div id="page">
   <div id="page2">
-  <div id="header">
-    <%= image_tag("logo.jpg", :class => "logo")%>
-    <div id="header-title">PD4.</div>
-  </div>
   <%= render "shared/pd4Cabecalho" %>
   <%= render "shared/pd4menu" %>
   <h1>
@@ -63,10 +59,16 @@
 <%=  link_to_add_fields2 "Adiciona ingredientes", f, :recipe_ingredients %></p>
 </div>
 
-<div class="field">
-    <%= f.label 'Procedimento' %><br>
-    <%= f.text_area :procedure, cols: 40, rows: 15 %>
-  </div>
+<table>
+   <%= f.fields_for(:recipe_procedures) do |builder| %>  
+    <%= render 'recipe_procedures', :f => builder %> 
+  <% end %>
+</table>
+
+<div class="fields">  
+<%=  link_to_add_procedure "Adiciona Prodedimento", f, :recipe_procedures %></p>
+</div>
+
 
   
   <div class="actions">

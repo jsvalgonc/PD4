@@ -15,7 +15,17 @@ $ ->
     regexp = new RegExp("new_" + association, "g")
     $(this).parent().before(content.replace(regexp, new_id))
     event.preventDefault()
-    
+
+$ ->    
+  $('#add_fields_prodedure').on 'click',(event) ->
+    association=$(this).attr('association')
+    content=$(this).attr('fields')
+    new_id = new Date().getTime()
+    regexp = new RegExp("new_" + association, "g")
+    $(this).parent().before(content.replace(regexp, new_id))
+    event.preventDefault()
+
+
 $ -> 
     $("#show_hide_nutricional_label2").on 'click',(event) ->
         $("#nutritional_label").toggle()
