@@ -34,6 +34,15 @@ h1{
     float:right;
     padding-bottom: 15px;
 }
+.h1-titulo-texto{
+    font-size: 16pt;
+    margin-top: 8px;
+    display:inline;
+    width:600px;
+    float:left;
+    padding-bottom: 4px;
+    size: 21px;
+}
 #content{
     float:left;
     width:830px;
@@ -62,12 +71,7 @@ h1{
     }
 }
 #content-procedimento-texto{
-    font-family: 'Times New Roman';
     font-size: 12px;
-    p{
-        font-family: 'Times New Roman';
-        font-size: 18px;
-        }
 }
 
 h3{
@@ -75,17 +79,42 @@ h3{
 }
 
 .table_procedure_procedure_nunber{ 
-    font-family: 'Times New Roman';
-    font-size: 25px;
+    font-family:verdana;
+    font-size: 14px;
+    line-height: 20px;
     font-weight: bold;
 }
 .table_procedure_title{
-    font-family: 'Times New Roman';
-    font-size: 22px;
-    font-style:italic;
+    font-family:verdana;
+    font-size: 13px;
+    line-height: 18px;
     text-align: left;
+    text-decoration: underline;
 }
 .table_procedure_procedure{
-    font-family: 'Times New Roman';
-    font-size: 18px;
+    font-family:verdana;
+    padding-bottom: 1cm;
+    font-size: 13px;
+    line-height: 18px;
+}
+.recipe_ingredients_amout{
+    text-align: right;
+}
+input:recipe_edit_procedure_table{
+    width:830px;
+}
+input.recipe_edit_procedure_table_procedure_number{
+    width:30px;
+    }
+input.recipe_edit_procedure_table_procedure_title{
+    width:650px;
+    font-style: italic;
+    text-decoration: underline;
+}
+input.recipe_edit_procedure_table_procedure_procedure{
+    color:red;
+    width:400px;
+    height:100px;
+    word-break: break-word;
+    text-align: justify;
 }

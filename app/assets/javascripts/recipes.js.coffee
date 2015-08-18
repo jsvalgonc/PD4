@@ -31,6 +31,12 @@ $ ->
         $("#nutritional_label").toggle()
 
 
+$ ->
+  $("#cb_ingredient").on 'click',(event) ->
+       alert 'bom dia'
+       selopt = $(this.children[this.cb_ingredient])
+       valor = parseInt(selopt.attr('value'))
+       $("#recipe_ingredients_measurment_unit") -> valor 
 
     
 

@@ -100,6 +100,6 @@ class IngredientsController < ApplicationController
     
     def ingredient_params
 #      params.require(:ingredient).permit(:measurement_unit_id, :description, :NDB_No, ingredients_nutrients_attributes[:id, :ingredient_id, :nutrient_id, :valor])
-      params.require(:ingredient).permit(:measurement_unit_id, :description, :NDB_No)
+      params.require(:ingredient).permit(:measurement_unit_id, :description, :NDB_No, :weight)
     end
 end

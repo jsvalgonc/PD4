@@ -36,6 +36,7 @@ Acrescentar um campo : rails generate migration AddReceitumIdToReceitaIngredient
 
 Criar uma tabela de ligação: Rails generate scaffold IngredientsRecipes recipe:references ingredient:reference
 
+:Apaga um campo: remove_column :recipe_procedures, :prodedures
 -----------Gems------------------------------
 
 gem install 

@@ -1,14 +1,24 @@
-<tr><td>
-  <div class="field">
-    <%= f.select :ingredient_id, Ingredient.order(:description).collect {|s|
-      [(s.description), s.id]} %>
-  </div>
-</td>
-<td>
-  <%= f.text_field :amout %>
-</td>
-<td>
-<%= f.check_box :_destroy %> 
-  apagar
-</td>
+<tr>
+    <td>
+       <div class="field">
+        <%= f.select :ingredient_id, Ingredient.order(:description).collect {|s|  [(s.description), s.id]}, class: "cb_ingredient"%>
+       </div>
+    </td>
+    <td>
+       <%= f.text_field :amout, :class => "recipe_ingredients_amout"%>
+    </td>
+     <td>
+     <% if not f.object.nil? -%>     
+        <% if f.object.amout == 1 -%>
+            <%= f.object.ingredient.measurement_unit.Unit rescue "-" %>
+        <% else %>
+            <%= f.object.ingredient.measurement_unit.Unit_plural  rescue "-"%> 
+        <% end -%>          
+    <% end %>
+    <%#= f.object.ingredient.measurement_unit.Unit rescue "-"%>
+    </td>
+    <td>  
+      <%= f.check_box :_destroy %> 
+      apagar
+    </td>
 </tr>

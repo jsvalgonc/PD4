@@ -2,14 +2,14 @@
 <section class="performance-facts">
   <header class="performance-facts__header">
     <h1 class="performance-facts__title">Informação Nutricional</h1>
-    <p>Serving Size 1/2 cup (about 82g)
-    <p>Serving Per Container 8</p>
+    <p>Dose 1/2 chávena (aprox. 82g)
+    <p></p>
   </header>
   <table class="performance-facts__table">
     <thead>
       <tr>
         <th colspan="3" class="small-info">
-          Amount Per Serving
+          Quantidades por Dose
         </th>
       </tr>
     </thead>
@@ -17,7 +17,7 @@
       <tr>
         <th colspan="2">
           <b>Calorias</b>
-          <%= @recipe.recipe_nutrients.find_by(nutrient_id: 208).valor %>
+          <%= number_with_delimiter(@recipe.calorias, :delimiter => ".", :separator => ",") %>
         </th>
         <td>
         </td>
@@ -30,10 +30,10 @@
       <tr>
         <th colspan="2">
           <b>Gordura Total</b>
-          <%= @recipe.recipe_nutrients.find_by(nutrient_id: 204).valor%>g
+          <%= number_with_delimiter(@recipe.gorduraTotal, :delimiter => ".", :separator => ",") %>g
         </th>
         <td>
-          <b>22%</b>
+          <b><%= @recipe.percentages["gorduraTotal"] %>%</b>
         </td>
       </tr>
       <tr>
@@ -41,37 +41,36 @@
         </td>
         <th>
           Gordura Saturada
-          <%= @recipe.recipe_nutrients.find_by(nutrient_id: 606).valor%>g
-        </th>
+          <%= number_with_delimiter(@recipe.gorduraSaturada, :delimiter => ".", :separator => ",") %>g       </th>
         <td>
-          <b>22%</b>
+          <b><%= @recipe.percentages["gorduraSaturada"] %></b>
         </td>
       </tr>
       <tr>
         <th colspan="2">
           <b>Colestrol</b>
-          <%= @recipe.recipe_nutrients.find_by(nutrient_id: 601).valor%>mg
+          <%= %>
         </th>
         <td>
-          <b>18%</b>
+          <b><%= @recipe.percentages["colestrol"] %>%</b>
         </td>
       </tr>
       <tr>
         <th colspan="2">
           <b>Sódio</b>
-          <%= @recipe.recipe_nutrients.find_by(nutrient_id: 307).valor%>mg
+          <%= number_with_delimiter(@recipe.sodio, :delimiter => ".", :separator => ",") %>>mg
         </th>
         <td>
-          <b>2%</b>
+          <b><%= @recipe.percentages["sodio"] %>%</b>
         </td>
       </tr>
       <tr>
         <th colspan="2">
           <b>Hidratos de Carbono Totais</b>
-          <%= @recipe.recipe_nutrients.find_by(nutrient_id: 205).valor%>g
+          <%= number_with_delimiter(@recipe.hidratosCarbono, :delimiter => ".", :separator => ",") %>g
         </th>
         <td>
-          <b>6%</b>
+          <b><%= @recipe.percentages["hidratosCarbono"] %>%</b>
         </td>
       </tr>
       <tr>
@@ -79,10 +78,10 @@
         </td>
         <th>
           Fibra Alimentar
-          <%= @recipe.recipe_nutrients.find_by(nutrient_id: 291).valor%>g
+          <%= number_with_delimiter(@recipe.fibra, :delimiter => ".", :separator => ",") %>g
         </th>
         <td>
-          <b>4%</b>
+          <b><%= @recipe.percentages["fibra"] %>%</b>
         </td>
       </tr>
       <tr>
@@ -90,7 +89,7 @@
         </td>
         <th>
           Açucar
-          14g
+          <%= number_with_delimiter(@recipe.acucar, :delimiter => ".", :separator => ",") %>g
         </th>
         <td>
         </td>
@@ -98,7 +97,7 @@
       <tr class="thick-end">
         <th colspan="2">
           <b>Proteinas</b>
-          <%= @recipe.recipe_nutrients.find_by(nutrient_id: 203).valor%>g
+          <%= number_with_delimiter(@recipe.proteinas, :delimiter => ".", :separator => ",") %>g
         </th>
         <td>
         </td>
@@ -111,50 +110,50 @@
       <tr>
         <td colspan="2">
           Vitamina A
-          10%
+          <%= @recipe.vitaminaA %>
         </td>
         <td>
           Vitamina C
-          0%
+          <%= @recipe.vitaminaC %>
         </td>
       </tr>
       <tr class="thin-end">
         <td colspan="2">
           Cálcio
-          10%
+          <%= @recipe.percentages["calcio"] %>%
         </td>
       </tr>
     </tbody>
   </table>
   
-  <p class="small-info">* Percent Daily Values are based on a 2,000 calorie diet. Your daily values may be higher or lower depending on your calorie needs:</p>
+  <p class="small-info">* As percentagens diarias são baseadas numa dieta de 2,000 calorias diárias.Os valores diários podem variar de acordo com as necessidades especificas de cada individuo:</p>
   
   <table class="performance-facts__table--small small-info">
     <thead>
       <tr>
         <td colspan="2"></td>
-        <th>Calories:</th>
+        <th>Calorias:</th>
         <th>2,000</th>
         <th>2,500</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <th colspan="2">Total Fat</th>
-        <td>Less than</td>
+        <th colspan="2">Gordura Total</th>
+        <td>Menos de </td>
         <td>65g</td>
         <td>80g</td>
       </tr>
       <tr>
         <td class="blank-cell"></td>
-        <th>Saturated Fat</th>
-        <td>Less than</td>
+        <th>Gordura Saturada</th>
+        <td>Menos de</td>
         <td>20g</td>
         <td>25g</td>
       </tr>
       <tr>
-        <th colspan="2">Cholesterol</th>
-        <td>Less than</td>
+        <th colspan="2">Colestrol</th>
+        <td>Menos</td>
         <td>300mg</td>
         <td>300 mg</td>
       </tr>

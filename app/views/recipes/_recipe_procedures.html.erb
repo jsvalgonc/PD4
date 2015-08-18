@@ -1,15 +1,16 @@
 <tr>
 <td>
-  <%= f.text_field :procedure_number %>
-</td>
-<td>
-  <%= f.text_field :title %>
+  <%= f.text_field :procedure_number, :class=>'recipe_edit_procedure_table_procedure_number' %>
+
+  <%= f.text_field :title, :class=>'recipe_edit_procedure_table_procedute_title'%>
 </td>
 </tr>
 <tr>
 <td>
-  <%= f.text_field :procedure %>
+  <%= f.text_area :procedure, :class=>'recipe_edit_procedure_table_procedure_procedure' %>
 </td>
+</tr>
+<tr>
 <td>
 <%= f.check_box :_destroy %> 
   apagar

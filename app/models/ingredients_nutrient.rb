@@ -18,7 +18,7 @@ class IngredientsNutrient < ActiveRecord::Base
     ingnut = IngredientsNutrient.new
     ingnut.ingredient_id=ingredient_id
     ingnut.nutrient_id = row[:nutrient_id]
-    ingnut.valor = row[:value]
+    ingnut.valor = row[:gm]
     ingnut.save
    end
  end

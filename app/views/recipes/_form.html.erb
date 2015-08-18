@@ -7,7 +7,7 @@
   <h1>
     <div id="h1-receita">Receita</div>
     <div id="h1-titulo" class="field">
-    <%= f.text_field :title %></div>
+    <%= f.text_field :title, :class => 'h1-titulo-texto' %></div>
   </h1>
   <p></p>
   <% if @recipe.errors.any? %>
@@ -49,10 +49,12 @@
 </div>
 
 <table>
-<tr><td>Ingrediente</td><td>Quantidade</td></tr><td> </td>
+<tr><td>Ingrediente</td><td>Quantidade</td><td></td><td></td></tr>    
+<%# byebug %>
+
    <%= f.fields_for(:recipe_ingredients) do |builder| %>  
     <%= render 'recipe_ingredients', :f => builder %> 
-  <% end %>
+   <% end %>
 </table>
 
 <div class="fields">  

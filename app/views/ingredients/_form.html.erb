@@ -27,11 +27,17 @@
       <%= f.label "Unidade de Medida" %><br>
       <%= f.collection_select :measurement_unit_id, MeasurementUnit.order(:Unit),:id,:Unit, include_blank: true %>
      </div>
-         <div class="field">
+  <div class="field">
     <%= f.label "NDB No" %><br>
     <%= f.text_field :NDB_No %>
   </div>
    <a href="#" onclick="window.open('http://ndb.nal.usda.gov/ndb/foods', 'Pagina', 'STATUS=NO, TOOLBAR=NO, LOCATION=NO, DIRECTORIES=NO, RESISABLE=YES, SCROLLBARS=YES, TOP=10, LEFT=10, WIDTH=770, HEIGHT=800');">Ingredientes USDA</a> 
+  <br>
+  <div class="field">
+    <%= f.label "Peso em gramas na unidade de medida" %><br>
+    <%= f.text_field :weight %>
+  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>
