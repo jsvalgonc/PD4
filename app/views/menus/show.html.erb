@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Day:</strong>
+  <%= @menu.day %>
+</p>
+
+<p>
+  <strong>Weekday:</strong>
+  <%= @menu.weekday %>
+</p>
+
+<p>
+  <strong>Meal:</strong>
+  <%= @menu.meal %>
+</p>
+
+<p>
+  <strong>Recipe:</strong>
+  <%= @menu.recipe %>
+</p>
+
+<%= link_to 'Edit', edit_menu_path(@menu) %> |
+<%= link_to 'Back', menus_path %>

@@ -1,0 +1,46 @@
+<div id="page-menu">
+<div id="page-menu-interior">
+<%= render "shared/pd4Cabecalho" %>
+<%= render "shared/pd4menu" %>
+<%= form_for @teste do |f| %>
+<h1>Semana<h1>
+  
+<% option_recipes = options_for_select(Recipe.all.map {|r| [ r.title, r.id,]}) %>
+<%= select_tag :week,options_for_select(Weeks.all.map {|s| [s.first_day]}) , :include_blank => true, :class => "cb_week" %>
+
+
+<br>
+
+<table class="table-menu">
+  <% weekdaysArray =["Seg.","Ter.","Quat.","Quint","Sex.","Sab.","Dom."] %>
+  <% dailyMealsArray =["Peq.Alm.","Snack Manhã","Almoço", "Snack Tarde","Lanche","Jantar","Snack Noite"] %>
+<thead>
+<tr> 
+    <th scope="col">_</th>
+  <% weekdaysArray.each do |weekday| %>
+    <th scope="col"> 
+      <%= weekday %>
+    </th>
+  <% end %>  
+</tr>
+</thead>
+  <% dailyMealsArray.each do |dailyMeal| %>
+<tr>
+  <td class="rowhead">
+    <%= dailyMeal %>
+  </td>
+  <% weekdaysArray.each do |weekday| %>
+    <td>                                                             
+      <%= select_tag :week, option_recipes, :include_blank => true, :class=>'optionrecipe' %>
+    </td>
+  <% end %>  
+</tr>
+  <% end %>  
+
+</table>
+
+<%= f.submit %>
+
+<% end %>
+</div>
+</div>

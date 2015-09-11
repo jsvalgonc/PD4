@@ -79,5 +79,16 @@
   </div>
   </div>
 
+<% ingr_records = Ingredient.all %>
+<% arr_ingr = {} %>
+<% ingr_records.each do |k| %>
+  <%  arr_ingr.store(k.id,k.measurement_unit.Unit) %>
 <% end %>
 
+<%# byebug %>
+
+<script>
+  var arr_ingr_js= JSON.parse('<%= arr_ingr.to_json.html_safe %>');
+</script>
+
+<% end %>

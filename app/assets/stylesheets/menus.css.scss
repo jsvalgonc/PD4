@@ -1,0 +1,59 @@
+// Place all the styles related to the Menus controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+// http://tympanus.net/codrops/2010/05/03/pimp-your-tables-with-css3/
+#page-menu{
+    width:1254px;
+    margin:0 auto;
+}
+
+
+#page-menu-interior{
+    background:#eecfa1;
+    //background-image: url(old_paper_background_hd_picture_2_169574.jpg);
+    width:1200px;
+    float:left;
+    padding:10px;
+    border: solid #444;
+    border-width: 1px 3px 3px 1px;
+}
+
+table.table-menu{
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.4em;
+    font-style: normal;
+    border-collapse:separate;
+    table-layout: fixed;
+    width:1150px;
+}
+
+.table-menu thead th{
+    width:100px;
+    padding:5px;
+    color:#fff;
+    text-shadow:1px 1px 1px #568F23;
+    border:1px solid #A92323;
+    border-bottom:3px solid #A92323;
+    background-color:#A92323;
+    //#9DD929
+    background:-webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.02, rgb(169,35,35)),
+        color-stop(0.51, rgb(207,42,42)),
+        color-stop(0.87, rgb(207,42,42))
+        );
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+
+.table-menu tr td.rowhead{ 
+ height:30px;
+}
+
+.table-menu tr td select.optionrecipe{ 
+ width:135px;
+}

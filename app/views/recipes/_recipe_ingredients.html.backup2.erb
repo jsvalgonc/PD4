@@ -1,0 +1,37 @@
+<tr>
+    <td>
+        <%# byebug %>
+        <%#select id="ingredient_id" name="Recipe[igredient_id]">
+            <% @items = Ingredient.find(:all, :order => "description")
+            @items.each do |item| %>
+                <%#option value="<%= item.id %>"
+                  <%# if f.object.ingredient_id == item.id -% selected="selected" <% end -%>
+                <%#  > <%#= item.description %>                        
+        <%#        </option>   
+        <%#    <% end %>
+    <%#    </select>
+          <%= f.select :ingredient_id, options_for_select(Ingredient.order(:description).collect {|s|  [(s.description), s.id ,s.measurement_unit.Unit ]},1), { }, {  :class =>"cb_ingredient"} %>
+        <%#= f.select  :ingredient_id [1,2] %>
+          <%# [['Lisbon', 1], ['Madrid', 2]].each do |c| -%>
+            <%#= content_tag(:option, c.description, value: c.id) %>
+          <%# end %>
+        <%# end %>
+
+    </td>
+    <td>
+       <%= f.text_field :amout, :class => "recipe_ingredients_amout"%>
+    </td>
+     <td class ='recipe_ingredients_measurment_unit'>
+     <% if not f.object.nil? -%>     
+        <% if f.object.amout == 1 -%>
+            <%= f.object.ingredient.measurement_unit.Unit rescue " - " %>
+        <% else %>
+            <%= f.object.ingredient.measurement_unit.Unit_plural  rescue " - "  %> 
+        <% end -%>          
+    <% end %>
+     </td>
+    <td>  
+      <%= f.check_box :_destroy %> 
+      apagar
+    </td>
+</tr>

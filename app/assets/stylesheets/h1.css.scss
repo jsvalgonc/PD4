@@ -105,16 +105,20 @@ input:recipe_edit_procedure_table{
 }
 input.recipe_edit_procedure_table_procedure_number{
     width:30px;
+    background-color:grey;
+    color:white;
+    font-weight:bold;
+    border:none;
     }
 input.recipe_edit_procedure_table_procedure_title{
     width:650px;
     font-style: italic;
     text-decoration: underline;
 }
-input.recipe_edit_procedure_table_procedure_procedure{
-    color:red;
-    width:400px;
-    height:100px;
+textarea.recipe_edit_procedure_table_procedure_procedure{
+    width:700px;
+    height: 100px;
     word-break: break-word;
     text-align: justify;
+    
 }

@@ -1,5 +1,12 @@
 Workspace::Application.routes.draw do
   
+  resources :menus do
+    collection do
+      get "menuweek" => 'menus#menuweek'
+      post "menuweek" => 'menus#updatemenuweek'
+    end
+  end
+
   resources :ingredients_nutrients
 
   resources :nutrients
@@ -18,6 +25,10 @@ Workspace::Application.routes.draw do
   
   root 'welcome#index'
   get "welcome/index" => 'welcome#index'
+  
+  #root 'menus#menuweek'
+  #get "menus/menuweek" => 'menus#menuweek'
+
 
   #teste de API 
   resources :teste

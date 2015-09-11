@@ -37,8 +37,12 @@ $ ->
        selopt = $(this.children[this.cb_ingredient])
        valor = parseInt(selopt.attr('value'))
        $("#recipe_ingredients_measurment_unit") -> valor 
-
-    
+       
+$ ->
+  $(".cb_ingredient").on 'change', (event) ->
+    NoPai = this.parentNode.parentNode
+    tx_MeasurementUnit = NoPai.getElementsByClassName('recipe_ingredients_measurment_unit')
+    tx_MeasurementUnit[0].innerHTML = arr_ingr_js[this.value]
 
     
 

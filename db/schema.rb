@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150806150217) do
+ActiveRecord::Schema.define(version: 20150825224518) do
 
   create_table "ingredients", force: true do |t|
     t.string   "description"
@@ -40,6 +40,17 @@ ActiveRecord::Schema.define(version: 20150806150217) do
     t.datetime "updated_at"
     t.text     "Unit_plural"
   end
+
+  create_table "menus", force: true do |t|
+    t.date     "day"
+    t.text     "weekday"
+    t.text     "meal"
+    t.integer  "recipe_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "menus", ["recipe_id"], name: "index_menus_on_recipe_id"
 
   create_table "nutrients", force: true do |t|
     t.string   "nutrno"
@@ -106,6 +117,12 @@ ActiveRecord::Schema.define(version: 20150806150217) do
 
   create_table "unidade_medidas", force: true do |t|
     t.string   "unidade"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "weeks", force: true do |t|
+    t.date     "first_day"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

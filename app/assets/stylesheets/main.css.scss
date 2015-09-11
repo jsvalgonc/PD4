@@ -34,22 +34,29 @@ h1{
     border-width: 1px 3px 3px 1px;
 }
 #containerWelcome {
-  height: 600px;
-  width: 518px;
-  position: relative;
+  height: 650px;
+  width: 550px;
+  //position: relative;
+  display: block;
+  margin-left: 65px;
+  margin-top: 30px;
+  //margin-right: auto
 }
 #imageWelcome {
-  position: absolute;
+  //position: absolute;
   left: 0;
   top: 0;
+  display: block;
+  //margin-left: auto;
+  //margin-right: auto
 }
 #textWelcome {
   z-index: 100;
   position: absolute;
   color: white;
-  font-size: 33px;
+  font-size: 53px;
   font-weight: bold;
-  left: 250px;
+  left: 600px;
   top: 250px;
   font-family: "EB Garamond";
 }
