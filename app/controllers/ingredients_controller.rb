@@ -56,6 +56,7 @@ class IngredientsController < ApplicationController
   # PATCH/PUT /ingredients/1.json
   def update
      #@ingredient = @measurement_unit.ingredients.find(params[:id])
+     byebug
     respond_to do |format|
       if @ingredient.update(ingredient_params)
         #format.html { redirect_to measurment_unit_ingredients_url(@measurement_unit), 'Ingredient was successfully updated.' }

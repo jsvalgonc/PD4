@@ -16,7 +16,6 @@ http://localhost:3000/
 
 Abrir o SQL 
 
-sqlite3 -line db/development.sqlite3
 lista tabelas: .tables
 Sair: .quit
 Esquemas: .schema

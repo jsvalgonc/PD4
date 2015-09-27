@@ -95,9 +95,6 @@ class RecipesController < ApplicationController
         recipe_ingredient.ingredient.ingredients_nutrients.map do |recipe_ingredient_nutrient|
           #calcula a porção de cada ingrediente 
           amout_nutrient = recipe_ingredient.amout * recipe_ingredient.ingredient.weight * recipe_ingredient_nutrient.valor/100
-          #if recipe_ingredient_nutrient.nutrient_id= 208 then 
-          #  byebug
-          #end
           #Se o nutriente já existe na array, acrescenta, se não cria
           if h.has_key?(recipe_ingredient_nutrient.nutrient_id) then
             #h[recipe_ingredient_nutrient.nutrient_id] = amout_nutrient

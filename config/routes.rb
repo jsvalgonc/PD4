@@ -4,6 +4,9 @@ Workspace::Application.routes.draw do
     collection do
       get "menuweek" => 'menus#menuweek'
       post "menuweek" => 'menus#updatemenuweek'
+      get "menuweek/:id" => 'menus#updatemenuweek'
+      post "menuweek/:id" => 'menus#menuweekpost'
+      patch "menuweek/:id" => 'menus#menuweekpost'
     end
   end
 

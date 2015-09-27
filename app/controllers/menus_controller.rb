@@ -27,22 +27,46 @@ class MenusController < ApplicationController
   end
   
   def updatemenuweek
-    #byebug
+    #cria uma hash (@menuweek_hash) com todos os menus da semana a partir da tabela
+    #@teste = "teste"
+    data = params[:id]
+    data_inicio = data.to_date
+    data_fim = data_inicio + 7.days
+    @menuweek=Menu.where("day > ? AND day < ?", data_inicio, data_fim).take(49)
+    @menuweek_hash= Hash[@menuweek.map {|menu| [[menu.day,menu.meal], menu.recipe_id]}]
+    @teste=@menuweek
   end
 
+  def showmenuweek
+    #cria uma hash (@menuweek_hash) com todos os menus da semana a partir da tabela
+    @teste = "teste"
+    data = params[:id]
+    data_inicio = data.to_date
+    data_fim = data_inicio + 7.days
+    @menuweek=Menu.where("day > ? AND day < ?", data_inicio, data_fim).take(49)
+    @menuweek_hash= Hash[@menuweek.map {|menu| [[menu.day,menu.meal], menu.recipe_id]}]
+  end
+  
+  #def menuweekpost
+  #    respond_to do |format|
+  #    if @teste.update(menu_params_week)
+  #      format.html { redirect_to @teste, notice: 'Menu semanal actualizado com sucesso.' }
+  #      format.json { head :no_content }
+  #    else
+  #      format.html { render action: 'Editado' }
+  #      format.json { render json: @teste.errors, status: :unprocessable_entity }
+  #    end
+  #  end
+
+#end
+  
   # POST /menus
   # POST /menus.json
   def create
     @menu = Menu.new(menu_params)
-
     respond_to do |format|
-      if @menu.save
-        format.html { redirect_to @menu, notice: 'Menu was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @menu }
-      else
-        format.html { render action: 'new' }
-        format.json { render json: @menu.errors, status: :unprocessable_entity }
-      end
+      format.html { redirect_to @menu, notice: 'Menu was successfully created.' }
+      format.json { render action: 'show', status: :created, location: @menu }
     end
   end
 
@@ -78,6 +102,10 @@ class MenusController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def menu_params
-      params.require(:menu).permit(:day, :weekday, :meal, :recipe_id)
+      params.require(:menu).permit(:day, :weekday, :meal, :recipe_id, :id, :menu)
     end
+    
+    #def menu_params_week
+    #  params.require(:teste)
+    #end
 end

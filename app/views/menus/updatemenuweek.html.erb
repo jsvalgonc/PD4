@@ -1,0 +1,60 @@
+<div id="page-menu">
+<div id="page-menu-interior">
+<% data_inicio=params[:id] %>
+<%= render "shared/pd4Cabecalho" %>
+<%= render "shared/pd4menu" %>
+
+<h1>Semana<h1>
+<% recipes_all = Recipe.all.map {|r| [ r.title, r.id,]} %>
+<%= select_tag :week,options_for_select(Weeks.all.map {|s| [s.first_day]}, params[:id]) , :include_blank => true, :class => "cb_week" %>
+<br>
+<%= form_for @teste, url: {action: "updatemenuweek", method: "post" } do |f| %>
+<%#= form_for @post, as: :post, url: post_path(@post), method: :patch, html: { class: "edit_post", id: "edit_post_45" } do |f| %>
+
+  <table class="table-menu">
+    <% weekdaysArray =["Seg.","Ter.","Quat.","Quint","Sex.","Sab.","Dom."] %>
+    <% dailyMealsArray =["Peq.Alm.","Snack Manhã","Almoço", "Snack Tarde","Lanche","Jantar","Snack Noite"] %>
+  <thead>
+    <tr> 
+      <% data = data_inicio.to_date %>
+      <th scope="col">_</th>
+      <% weekdaysArray.each do |weekday| %>
+        <th scope="col"> 
+          <%= weekday %>
+        </th>
+      <% end %>  
+    </tr>
+  </thead>
+  <% count=0 %>
+  <% i=0 %>
+  <% dailyMealsArray.each do |dailyMeal| %>
+    <% data = data_inicio.to_date %>
+    <tr>
+      <td class="rowhead">
+        <%= dailyMeal %>
+      </td>
+      <% j=0 %>
+      <% weekdaysArray.each do |weekday| %>
+        <td>
+          <% menu ="" %>    
+          <% if @menuweek_hash.has_key?([data,count.to_s]) then menu = @menuweek_hash[[data,count.to_s]] %>
+          <% end %>
+          <% option_recipes = options_for_select(recipes_all, menu) %>
+          <%# select_tag  :week[i][j], option_recipes ,:include_blank => true, :class=>'optionrecipe' %>
+          <%= select_tag  "optionrecipe", option_recipes ,:include_blank => true, :class=>'optionrecipe' %>
+        </td>
+        <% data = data + 1.days %>
+        <% j+=1 
+        %>
+      <% end %>
+      <% count=count+1 %>
+      <% i+=1 %>
+    </tr>
+  <% end %>  
+</table>
+<div class="actions">
+  <%= f.submit "Actualizar"%>
+</div>
+<% end %>
+</div>
+</div>
