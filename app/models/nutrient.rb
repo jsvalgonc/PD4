@@ -1,6 +1,6 @@
 class Nutrient < ActiveRecord::Base
-  has_many :ingredients_nutrients,:dependent => :destroy  
-  accepts_nested_attributes_for :ingredients_nutrients, :allow_destroy => true  
+  has_many :ingredients_nutrients,:dependent => :destroy 
+  has_many :weeks_nutrients,:dependent => :destroy
   require 'csv'
   def self.import(file)
     CSV.foreach(file.path, headers: true) do |row|

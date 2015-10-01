@@ -15,6 +15,7 @@ http://localhost:3000/
 -------------Bases de Dados-------------------------------
 
 Abrir o SQL 
+sqlite3 db/development.sqlite3
 
 lista tabelas: .tables
 Sair: .quit

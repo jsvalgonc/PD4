@@ -1,0 +1,192 @@
+<div id="nutritional_label">
+<section class="performance-facts">
+  <header class="performance-facts__header">
+    <h1 class="performance-facts__title">Informação Nutricional</h1>
+    <p>Dose 1/2 chávena (aprox. 82g)
+    <p></p>
+  </header>
+  <table class="performance-facts__table">
+    <thead>
+      <tr>
+        <th colspan="3" class="small-info">
+          Quantidades por Dose
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th colspan="2">
+          <b>Calorias</b>
+          <%= number_with_delimiter(@week.calorias, :delimiter => ".", :separator => ",") %>
+        </th>
+        <td>
+        </td>
+      </tr>
+      <tr class="thick-row">
+        <td colspan="3" class="small-info">
+          <b>% do Valor Diário*</b>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2">
+          <b>Gordura Total</b>
+          <%= number_with_delimiter(@week.gorduraTotal, :delimiter => ".", :separator => ",") %>g
+        </th>
+        <td>
+          <b><%= @week.percentages["gorduraTotal"] %>%</b>
+        </td>
+      </tr>
+      <tr>
+        <td class="blank-cell">
+        </td>
+        <th>
+          Gordura Saturada
+          <%= number_with_delimiter(@week.gorduraSaturada, :delimiter => ".", :separator => ",") %>g       </th>
+        <td>
+          <b><%= @week.percentages["gorduraSaturada"] %></b>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2">
+          <b>Colestrol</b>
+          <%= %>
+        </th>
+        <td>
+          <b><%= @week.percentages["colestrol"] %>%</b>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2">
+          <b>Sódio</b>
+          <%= number_with_delimiter(@week.sodio, :delimiter => ".", :separator => ",") %>>mg
+        </th>
+        <td>
+          <b><%= @week.percentages["sodio"] %>%</b>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2">
+          <b>Hidratos de Carbono Totais</b>
+          <%= number_with_delimiter(@week.hidratosCarbono, :delimiter => ".", :separator => ",") %>g
+        </th>
+        <td>
+          <b><%= @week.percentages["hidratosCarbono"] %>%</b>
+        </td>
+      </tr>
+      <tr>
+        <td class="blank-cell">
+        </td>
+        <th>
+          Fibra Alimentar
+          <%= number_with_delimiter(@week.fibra, :delimiter => ".", :separator => ",") %>g
+        </th>
+        <td>
+          <b><%= @week.percentages["fibra"] %>%</b>
+        </td>
+      </tr>
+      <tr>
+        <td class="blank-cell">
+        </td>
+        <th>
+          Açucar
+          <%= number_with_delimiter(@week.acucar, :delimiter => ".", :separator => ",") %>g
+        </th>
+        <td>
+        </td>
+      </tr>
+      <tr class="thick-end">
+        <th colspan="2">
+          <b>Proteinas</b>
+          <%= number_with_delimiter(@week.proteinas, :delimiter => ".", :separator => ",") %>g
+        </th>
+        <td>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <table class="performance-facts__table--grid">
+    <tbody>
+      <tr>
+        <td colspan="2">
+          Vitamina A
+          <%= @week.vitaminaA %>
+        </td>
+        <td>
+          Vitamina C
+          <%= @week.vitaminaC %>
+        </td>
+      </tr>
+      <tr class="thin-end">
+        <td colspan="2">
+          Cálcio
+          <%= @week.percentages["calcio"] %>%
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <p class="small-info">* As percentagens diarias são baseadas numa dieta de 2,000 calorias diárias.Os valores diários podem variar de acordo com as necessidades especificas de cada individuo:</p>
+  
+  <table class="performance-facts__table--small small-info">
+    <thead>
+      <tr>
+        <td colspan="2"></td>
+        <th>Calorias:</th>
+        <th>2,000</th>
+        <th>2,500</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th colspan="2">Gordura Total</th>
+        <td>Menos de </td>
+        <td>65g</td>
+        <td>80g</td>
+      </tr>
+      <tr>
+        <td class="blank-cell"></td>
+        <th>Gordura Saturada</th>
+        <td>Menos de</td>
+        <td>20g</td>
+        <td>25g</td>
+      </tr>
+      <tr>
+        <th colspan="2">Colestrol</th>
+        <td>Menos</td>
+        <td>300mg</td>
+        <td>300 mg</td>
+      </tr>
+      <tr>
+        <th colspan="2">Sódio</th>
+        <td>Less than</td>
+        <td>2,400mg</td>
+        <td>2,400mg</td>
+      </tr>
+      <tr>
+        <th colspan="3">Total Hidratos de Carbono</th>
+        <td>300g</td>
+        <td>375g</td>
+      </tr>
+      <tr>
+        <td class="blank-cell"></td>
+        <th colspan="2">Fibra Alimentar</th>
+        <td>25g</td>
+        <td>30g</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <p class="small-info">
+    Calorias por grama:
+  </p>
+  <p class="small-info text-center">
+    Gorduras 9
+    &bull;
+    Hidratos de Carbono 4
+    &bull;
+    Proteinas 4
+  </p>
+  
+</section>
+</id>

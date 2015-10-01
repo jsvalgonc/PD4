@@ -6,7 +6,7 @@
 <h1>Semana<h1>
   
 <% option_recipes = options_for_select(Recipe.all.map {|r| [ r.title, r.id,]}) %>
-<%= select_tag :week,options_for_select(Weeks.all.map {|s| [s.first_day]}) , :include_blank => true, :class => "cb_week" %>
+<%= select_tag :week,options_for_select(Week.all.map {|s| [s.first_day]}) , :include_blank => true, :class => "cb_week" %>
 
 <% end %>
 </div>

@@ -6,9 +6,11 @@
 
 <h1>Semana<h1>
 <% recipes_all = Recipe.all.map {|r| [ r.title, r.id,]} %>
-<%= select_tag :week,options_for_select(Weeks.all.map {|s| [s.first_day]}, params[:id]) , :include_blank => true, :class => "cb_week" %>
+<%= select_tag :week,options_for_select(Week.all.map {|s| [s.first_day]}, params[:id]) , :include_blank => true, :class => "cb_week" %>
 <br>
-<%= form_for @teste, url: {action: "updatemenuweek", method: "post" } do |f| %>
+<%= form_for :teste, url: menuweek_menus_path + "/" + params[:id], method: :patch, html: { class: "update_menuweek_post", id: "update_menuweek_post_1"} do |f| %>
+
+<%#= form_for @teste, url: {action: "updatemenuweek", method: "post" } do |f| %>
 <%#= form_for @post, as: :post, url: post_path(@post), method: :patch, html: { class: "edit_post", id: "edit_post_45" } do |f| %>
 
   <table class="table-menu">
@@ -41,7 +43,7 @@
           <% end %>
           <% option_recipes = options_for_select(recipes_all, menu) %>
           <%# select_tag  :week[i][j], option_recipes ,:include_blank => true, :class=>'optionrecipe' %>
-          <%= select_tag  "optionrecipe", option_recipes ,:include_blank => true, :class=>'optionrecipe' %>
+          <%= select_tag  "optionrecipe_" + i.to_s + "_" + j.to_s, option_recipes ,:include_blank => true, :class=>'optionrecipe' %>
         </td>
         <% data = data + 1.days %>
         <% j+=1 
@@ -55,6 +57,7 @@
 <div class="actions">
   <%= f.submit "Actualizar"%>
 </div>
+<%= render 'nutritional_label' %> 
 <% end %>
 </div>
 </div>

@@ -87,7 +87,6 @@ class RecipesController < ApplicationController
       end
       #percorre os ingredientes da receita
       set_recipe
-      #byebug
       #cria uma array para os nutrientes 
       h=Hash.new(0)
       @recipe.recipe_ingredients.each do |recipe_ingredient|

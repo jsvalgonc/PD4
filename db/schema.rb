@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150825224518) do
+ActiveRecord::Schema.define(version: 20150930085329) do
 
   create_table "ingredients", force: true do |t|
     t.string   "description"
@@ -117,6 +117,15 @@ ActiveRecord::Schema.define(version: 20150825224518) do
 
   create_table "unidade_medidas", force: true do |t|
     t.string   "unidade"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "week_nutrients", force: true do |t|
+    t.integer  "week_id"
+    t.integer  "nutrient_id"
+    t.string   "valor"
+    t.string   "integer"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
